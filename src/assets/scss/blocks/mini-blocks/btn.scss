@@ -1,0 +1,41 @@
+.btn {
+    font-family: "Inter", sans-serif;
+    padding: 1.6rem 4.8rem;
+    font-weight: 700;
+    line-height: 155%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: $white;
+    border: none;
+    border-radius: 5px;
+    &_cta {
+        padding: 2.3rem 6.7rem;
+        color: $secondary;
+    }
+    &_more {
+        padding: 2.3rem 4.2rem;
+        display: inline-block;
+        color: $white;
+        background: $secondary;
+        &_big {
+            width: 100%;
+        }
+    }
+    &_action {
+        padding: 2rem 10rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: $white;
+        background: $secondary;
+        line-height: 111%;
+    }
+    &_red {
+        padding: 1.8rem 3rem;
+        font-size: 1.8rem;
+        color: $white;
+        font-weight: 600;
+        line-height: 111%;
+        background: #cd2626;
+    }
+}

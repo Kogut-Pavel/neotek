@@ -1,0 +1,80 @@
+.product {
+    position: relative;
+    max-width: 295px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.8rem 1.2rem 1.4rem 1.2rem;
+    background: #ebebeb;
+    border-radius: 5px;
+    &::before {
+        content: url("../images/icons/red-heart.svg");
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+    &__image {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 2.8rem;
+        max-height: 256px;
+        height: 100%;
+        img {
+            vertical-align: bottom;
+            object-fit: contain;
+        }
+    }
+    &__descr {
+        margin: 0.5rem 0;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    &__price {
+        margin-bottom: 1.3rem;
+        font-weight: 500;
+        line-height: 130.99%;
+        letter-spacing: 0.04em;
+    }
+    &__footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            .product__tocart div {
+                opacity: 1;
+                transition: all 0.5s ease;
+            }
+            .product__tocart img {
+                right: 9.5rem;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    &__assortment {
+        font-weight: 500;
+        letter-spacing: 0.05em;
+    }
+    &__tocart {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        div {
+            opacity: 0;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: #cd2626;
+            transition: all 0.2 s ease;
+        }
+        img {
+            position: absolute;
+            bottom: 1.2rem;
+            right: 1.2rem;
+            transition: all 0.3s ease;
+        }
+    }
+}

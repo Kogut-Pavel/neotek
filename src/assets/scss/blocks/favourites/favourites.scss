@@ -1,0 +1,84 @@
+.favourites {
+    .section__text {
+        max-width: 100%;
+        text-align: center;
+    }
+    &__item {
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: center;
+        padding: 2rem 1.8rem 2rem 2rem;
+        border: 1px solid $secondary;
+        border-radius: 1rem;
+        .counter {
+            margin-left: auto;
+        }
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 2.8rem;
+    }
+    &__image {
+        width: 151px;
+        height: 11rem;
+        background: $lightgray;
+        border-radius: 5px;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-height: 11rem;
+        }
+    }
+    &__info {
+        max-width: 285px;
+    }
+    h3 {
+        min-height: 4rem;
+        margin-bottom: 1rem;
+        color: #373a24;
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        &_old,
+        &_new {
+            font-size: 1.8rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        &_old {
+            font-weight: 500;
+            text-decoration-line: line-through;
+            color: #8b8b8b;
+        }
+        &_new {
+            font-weight: 600;
+            color: $secondary;
+        }
+    }
+    &__discount {
+        padding: 0.45rem 0.6rem;
+        letter-spacing: 0.05em;
+        background: #cd2626;
+        border-radius: 3px;
+        color: $white;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 5.4rem;
+        margin-left: auto;
+    }
+    &__item-total {
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+    &__btn-delete {
+        padding: 2rem;
+        background: transparent;
+        border: none;
+    }
+}

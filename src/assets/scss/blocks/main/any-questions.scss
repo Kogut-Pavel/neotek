@@ -1,0 +1,115 @@
+.any-questions {
+    &__wrapper {
+        padding: 11rem 0;
+        background-color: $secondary;
+        background: url("../images/any-questions/bg.png") 100% / cover no-repeat;
+        color: $white;
+    }
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        gap: 10.5rem;
+    }
+    h2 {
+        color: $white;
+        max-width: 20.5rem;
+        width: 100%;
+    }
+    &__text {
+        line-height: 111%;
+        letter-spacing: 0.05em;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    &__form {
+        margin-top: 6rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 5rem;
+        input {
+            max-width: 100%;
+            width: 478px;
+            padding: 2.5rem 1.5rem 2rem 1.5rem;
+            background: transparent;
+            border-width: 1px 0px;
+            border-style: solid;
+            border-color: $white;
+            border-radius: 5px;
+            line-height: 155.1%;
+            color: $white;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-weight: 700;
+            &::placeholder {
+                color: $white;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+    &__checkbox {
+        display: flex;
+        gap: 0.5rem;
+        input {
+            background: $white;
+            border-radius: 5px;
+            width: 3rem;
+            height: 3rem;
+            z-index: 9;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+// Попытка сделать стилизованный чекбокс
+
+// .any-questions__checkbox {
+//     position: relative;
+//     display: flex;
+//     gap: 0.5rem;
+// }
+
+// .any-questions__checkbox::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 3rem;
+//     height: 3rem;
+//     background: $white;
+//     border-radius: 5px;
+//     z-index: 2;
+// }
+
+// .any-questions__checkbox p {
+//     position: relative;
+// }
+
+// .any-questions__checkbox p::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: -30px;
+//     width: 2.3rem;
+//     height: 2.3rem;
+//     z-index: 13;
+// }
+
+// .any-questions__checkbox input {
+//     // position: relative;
+//     opacity: 1;
+//     width: 3rem;
+//     height: 3rem;
+//     z-index: 1;
+// }
+// .any-questions__checkbox input:checked .any-questions__checkbox p::before {
+//     content: url("../images/any-questions/check-mark.svg");
+// }

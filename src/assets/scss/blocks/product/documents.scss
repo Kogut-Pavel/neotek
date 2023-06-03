@@ -1,0 +1,50 @@
+.documents {
+    &__text {
+        margin: 3.5rem 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    &__name,
+    &__download {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 111%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__name {
+        max-width: 59rem;
+        width: 100%;
+        padding: 2.5rem 5.2rem;
+        border-width: 1px 0px;
+        border-style: solid;
+        border-color: $secondary;
+        border-radius: 0.5rem;
+    }
+    &__download {
+        position: relative;
+        padding: 2.5rem 10.5rem;
+        color: $secondary;
+        border: 1px solid $secondary;
+        border-radius: .5rem;
+        &::after {
+            content: url('../images/icons/download-blue.svg');
+            position: absolute;
+            right: 4.1rem;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+    }
+}

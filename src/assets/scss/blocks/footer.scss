@@ -1,0 +1,103 @@
+.footer {
+    margin-top: auto;
+    padding-bottom: 0;
+    color: $white;
+    &__wrapper {
+        padding: 6.3rem 0 3.5rem 0;
+        background: url("../images/footer/bg.png") 100% / cover no-repeat;
+    }
+    &__text {
+        width: calc(25%);
+        margin-bottom: 4px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        line-height: 155%;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    &__col {
+        width: calc(25%);
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            li {
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__name {
+        span,
+        p {
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            line-height: 155%;
+        }
+        span {
+            margin-bottom: 4.5rem;
+            display: block;
+        }
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+    &__confident {
+        margin-top: 9.4rem;
+        letter-spacing: 0.05em;
+        a {
+            display: block;
+            margin-bottom: .5rem;
+        }
+    }
+    &__btns {
+        margin-top: 2.1rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.5rem;
+        a {
+            height: 5.8rem;
+            padding: 1.9rem 3.3rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border: 1px solid $white;
+            border-radius: 5px;
+            font-weight: 500;
+            text-transform: uppercase;
+            &:nth-child(2) {
+                padding: 1.3rem 1.8rem;
+                max-width: 100%;
+            }
+        }
+    }
+    &__contacts {
+        margin-top: 6.5rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        a {
+            width: 5rem;
+            height: 5rem;
+            padding: 1.5rem;
+            border: 1px solid $white;
+            border-radius: 50%;
+            img {
+                max-width: 2rem;
+            }
+        }
+    }
+    &__dev {
+        margin-top: 9.4rem;
+        text-align: right;
+        line-height: 116%;
+        letter-spacing: 0.05em;
+    }
+}

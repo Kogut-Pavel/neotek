@@ -1,0 +1,102 @@
+.about {
+    &__wrapper {
+        margin-top: 5rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-areas:
+            "block1 block2 block3 block4"
+            "block5 block6 block7 block4"
+            "block8 block9 block10 block11";
+    }
+    &__item,
+    .about__item img {
+        border-radius: 5px;
+        width: 285px;
+        height: 189px;
+    }
+    .block1 {
+        grid-area: block1;
+    }
+    .block2 {
+        grid-area: block2;
+    }
+    .block3 {
+        grid-area: block3;
+        div {
+            display: inline-block;
+            padding: 1rem 2.2rem;
+            font-size: 15px;
+            line-height: 111%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border: 1px solid $secondary;
+            border-radius: 61px;
+        }
+    }
+    .block4 {
+        grid-area: block4;
+        width: unset;
+        height: unset;
+        img {
+            width: unset;
+            height: unset;
+        }
+    }
+    .block5 {
+        grid-area: block5;
+    }
+    .block6 {
+        grid-area: block6;
+    }
+    .block7 {
+        grid-area: block7;
+    }
+    .block8 {
+        grid-area: block8;
+    }
+    .block9 {
+        grid-area: block9;
+    }
+    .block10 {
+        grid-area: block10;
+    }
+    .block11 {
+        grid-area: block11;
+    }
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        border: 1px solid $secondary;
+        border-radius: 5px;
+        .big-blue {
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 111%;
+            color: $secondary;
+        }
+        .descr {
+            font-weight: 700;
+            line-height: 155%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    }
+    .text {
+        line-height: 111%;
+        letter-spacing: 0.05em;
+    }
+    .plus {
+        position: relative;
+        &::before {
+            content: url('../images/icons/plus.svg');
+            position: absolute;
+            top: -23px;
+            right: -23px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.hero {
+    height: 100vh;
+    padding: 18.5rem 0 8.4rem 0;
+    position: relative;
+    background: url("../images/hero/bg.png") 100% / cover no-repeat;
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+    &__left {
+        ul {
+            max-width: 38rem;
+            padding-left: 1.6rem;
+            margin-bottom: 3.5rem;
+            li {
+                list-style-type: disc;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 118%;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+    }
+    &__right {
+        max-width: 682px;
+        padding: 4.6rem 7.1rem 4.6rem 0.6rem;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 5px;
+    }
+    &__product {
+        display: flex;
+        align-items: center;
+        &-descr {
+            margin: 1rem 0 2rem 0;
+            letter-spacing: 0.05em;
+        }
+        &-more {
+            color: $secondary;
+            letter-spacing: 0.05em;
+        }
+    }
+}

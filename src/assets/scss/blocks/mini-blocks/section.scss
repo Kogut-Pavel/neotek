@@ -1,0 +1,28 @@
+section, footer {
+    padding: 5rem 0;
+    &.pt-10 {
+        padding-top: 10rem;
+    }
+}
+
+.section {
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 3.5rem;
+    }
+    &__text {
+        max-width: 895px;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        text-align: right;
+        letter-spacing: 0.05em;
+        line-height: 111%;
+        &_tal {
+            text-align: left;
+        }
+    }
+}

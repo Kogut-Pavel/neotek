@@ -1,0 +1,99 @@
+.productpage {
+    .section__text {
+        margin-left: auto;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    &__image {
+        background: #ebebeb;
+        border-radius: 1.5rem;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 3rem;
+            cursor: pointer;
+        }
+    }
+    &__title {
+        margin-bottom: 0.2rem;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 111%;
+        letter-spacing: 0.05em;
+        color: $secondary;
+    }
+    &__undertitle {
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        line-height: 155%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__price {
+        margin-bottom: 1.5rem;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 111%;
+        letter-spacing: 0.05em;
+    }
+    &__descr {
+        margin-bottom: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        p {
+            letter-spacing: 0.05em;
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        max-height: 5.7rem;
+        gap: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__tech {
+        text-transform: uppercase;
+        border-top: 1px solid $secondary;
+        border-bottom: 1px solid $secondary;
+        &_header {
+            padding: 2rem 1.5rem 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 1.8rem;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.3s linear;
+            &.active {
+                transition: all 0.3s linear;
+                img {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        &_spec {
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            span {
+                color: $secondary;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.clients {
+    &__wrapper {
+        background: $secondary;
+        padding: 1.2rem 0;
+        display: flex;
+        overflow: hidden;
+    }
+    &__inner, .marquee {
+        display: flex;
+        gap: 4rem;
+        align-items: center;  
+    }
+    .marquee {
+        animation: marquee 20s linear infinite;
+        white-space: nowrap;
+        width: 200%;
+        overflow: hidden;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+

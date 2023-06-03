@@ -1,0 +1,39 @@
+.best-products {
+    &__wrapper {
+        display: flex;
+        align-content: stretch;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    &__cta {
+        background-color: $secondary;
+        padding: 2rem;
+        p {
+            font-weight: 500;
+            text-align: left;
+            color: $white;
+            text-transform: uppercase;
+        }
+        span {
+            margin-top: auto;
+            color: $white;
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            line-height: 111%;
+            text-align: left;
+        }
+        &::before {
+            content: url("../images/icons/arrow-right.svg");
+            top: unset;
+            bottom: 2rem;
+            right: 2rem;
+            transition: all 0.3s ease;
+        }
+        &:hover {
+            &::before {
+                right: 4rem;
+            }
+        }
+    }
+}
