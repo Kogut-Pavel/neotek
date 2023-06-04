@@ -3,25 +3,114 @@ layout: default
 title: Account
 ---
 
-<div class="container">
-    <div class="breadcrumb">
-        <img src="assets/images/icons/house.svg" alt="main" />
-        <div class="breadcrumb__item">Личный кабинет</div>
-    </div>
-</div>
-
-<section class="profile">
+<section class="account">
     <div class="container">
+        <div class="breadcrumb">
+            <img src="assets/images/icons/house.svg" alt="main" />
+            <div class="breadcrumb__item">Личный кабинет</div>
+        </div>
+
         <div class="section__header">
             <p class="section__text">Ваш профиль</p>
         </div>
-    </div>
-</section>
 
-<section class="order">
-    <div class="container">
-        <div class="section__header">
-            <p class="section__text">Ваши заказы</p>
+        <div class="account__wrapper">
+            <aside class="account-menu">
+                <h3 class="title title_h3">Навигация</h3>
+                <ul>
+                    <li class="active">Редактирование</li>
+                    <li>Заказы</li>
+                </ul>
+            </aside>
+
+            <div class="account__inner">
+                <section class="profile">
+                    <form action="#" id="profile-form">
+                        <div class="profile__subtitle">Основные данные</div>
+                        <div class="profile__group profile__main-data">
+                            <label for="name">
+                                <input type="text" name="name" id="name" placeholder="Иванов Иван">
+                            </label>
+                            <label for="birthday">
+                                <input type="text" name="birthday" id="birthday" placeholder="14.02.2000">
+                            </label>
+                            <label for="email">
+                                <input type="email" name="email" id="email" placeholder="ivanovname@gmail.com">
+                            </label>
+                            <label for="city">
+                                <input type="text" name="city" id="city" placeholder="Ваш город">
+                            </label>
+                            <label for="tel">
+                                <input type="tel" name="tel" id="tel" placeholder="+7 (495) 742-32-84">
+                            </label>
+                            <div class="profile__gender">
+                                <label for="male">
+                                    <input type="checkbox" name="male" id="male">
+                                    <span>Муж</span>
+                                </label>
+                                <label for="female">
+                                    <input type="checkbox" name="female" id="female">
+                                    <span>Жен</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="profile__subtitle">Тип пользователя</div>
+                        <div class="profile__group profile__type">
+                            <div class="profile__subject">
+                                <button>Физическое лицо</button>
+                                <label for="designer-fiz">
+                                    <input type="checkbox" name="designer-fiz" id="designer-fiz">
+                                    <span class="active">Проектировщик</span>
+                                </label>
+                                <label for="contractor-fiz">
+                                    <input type="checkbox" name="contractor-fiz" id="contractor-fiz">
+                                    <span>Подрядчик</span>
+                                </label>
+                                <label for="customer-fiz">
+                                    <input type="checkbox" name="customer-fiz" id="customer-fiz">
+                                    <span>Заказчик</span>
+                                </label>
+                            </div>
+                            <div class="profile__subject">
+                                <button class="active">Юридическое лицо</button>
+                                <input class="face-name" type="text" name="urname" id="urname" placeholder="Название ЮЛ">
+                                <label for="designer-ur">
+                                    <input type="checkbox" name="designer-ur" id="designer-ur">
+                                    <span class="active">Проектировщик</span>
+                                </label>
+                                <label for="contractor-ur">
+                                    <input type="checkbox" name="contractor-ur" id="contractor-ur">
+                                    <span>Подрядчик</span>
+                                </label>
+                                <label for="customer-ur">
+                                    <input type="checkbox" name="customer-ur" id="customer-ur">
+                                    <span>Заказчик</span>
+                                </label>
+                            </div>
+                            <div class="profile__subject">
+                                <button>ИП</button>
+                                <input class="face-name" type="text" name="indname" id="indname" placeholder="Название">
+                                <label for="designer-ind">
+                                    <input type="checkbox" name="designer-ind" id="designer-ind">
+                                    <span class="active">Проектировщик</span>
+                                </label>
+                                <label for="contractor-ind">
+                                    <input type="checkbox" name="contractor-ind" id="contractor-ind">
+                                    <span>Подрядчик</span>
+                                </label>
+                                <label for="customer-ind">
+                                    <input type="checkbox" name="customer-ind" id="customer-ind">
+                                    <span>Заказчик</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="save-btn">Сохранить</button>
+                    </form>
+                </section>
+
+                <section class="order d-none">
+                </section>
+            </div>
         </div>
     </div>
 </section>
