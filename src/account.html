@@ -24,7 +24,7 @@ title: Account
             </aside>
 
             <div class="account__inner">
-                <section class="profile">
+                <section class="profile d-none">
                     <form action="#" id="profile-form">
                         <div class="profile__subtitle">Основные данные</div>
                         <div class="profile__group profile__main-data">
@@ -108,7 +108,54 @@ title: Account
                     </form>
                 </section>
 
-                <section class="order d-none">
+                <section class="order">
+                    <div class="order__buttons">
+                        <button class="active">В работе</button>
+                        <button>Завершенные</button>
+                        <button>Отмененные</button>
+                    </div>
+                    <div class="order__data">
+                        <div class="order__info">
+                            <div>Заказ #<span>712904</span></div>
+                            <div class="order__subinfo"><span class="order__date">13.13.2023</span> в <span class="order__time">19:43</span></div>
+                        </div>
+                         <div class="order__structure">
+                            <div class="order__structure-header">
+                                <div>Состав заказа <span>2 ед.</span></div>
+                            </div>
+
+                            <ul class="order__list">
+                                <li class="order__item">
+                                    <div class="order__item-title">Герметик двухкомпонентный MAPEFLEX PU70 SL</div>
+                                    <div class="order__item-right">
+                                        <div class="order__item-price">4 568 р.</div>
+                                        <div class="order__item-count">2 шт.</div>
+                                    </div>
+                                </li>
+                                <li class="order__item">
+                                    <div class="order__item-title">Герметик двухкомпонентный MAPEFLEX PU70 SL</div>
+                                    <div class="order__item-right">
+                                        <div class="order__item-price">4 568 р.</div>
+                                        <div class="order__item-count">2 шт.</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="order__footer">
+                                <div class="order__footer-text">
+                                    <div>Сумма заказа:</div>
+                                    <div>Способ доставки:</div>
+                                </div>
+                                <div class="order__footer-value">
+                                    <div class="order__sum">3 840 230 р.</div>
+                                    <div class="order__delivery">Самовывоз</div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
                 </section>
             </div>
         </div>
