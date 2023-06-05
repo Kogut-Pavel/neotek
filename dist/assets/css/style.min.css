@@ -1506,7 +1506,8 @@ section, footer {
   border: none; }
 
 .account .section__header {
-  justify-content: end; }
+  justify-content: end;
+  margin-top: 3rem; }
 
 .account .section__text {
   text-align: left; }
