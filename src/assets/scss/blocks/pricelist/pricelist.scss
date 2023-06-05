@@ -1,0 +1,91 @@
+.pricelist {
+    .section__header {
+        .section__text {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        position: relative;
+        padding: 2rem 2rem 2rem 3rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 111%;
+        text-transform: uppercase;
+        color: $secondary;
+        border: 1px solid $secondary;
+        border-radius: 5px;
+        &-title {
+            cursor: pointer;
+        }
+        &::after {
+            content: url("../images/icons/big-triangle.svg");
+            position: absolute;
+            top: 2.1rem;
+            right: 2rem;
+            width: 2.1rem;
+            height: 1.9rem;
+            cursor: pointer;
+        }
+        &.active {
+            &::after {
+                transform: rotate(180deg);
+            }
+            .pricelist__underlist {
+                display: flex;
+            }
+        }
+    }
+
+    &__underlist {
+        display: none;
+        margin-top: 2.4rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    &__underitem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $lightgray;
+        &-rightblock {
+            display: flex;
+            align-items: center;
+        }
+        &-title {
+            width: 50%;
+            color: #000;
+        }
+        &-price {
+            margin-right: 3.3rem;
+            color: #000;
+        }
+        &-countblock {
+            height: 3.5rem;
+            display: flex;
+            gap: .5rem;
+            margin-right: 2.5rem;
+            input {
+                width: 5rem;
+                border: none;
+                text-align: center;
+                vertical-align: middle;
+            }
+            button {
+                padding: .5rem 1rem;
+                text-align: center;
+                font-size: 1.8rem;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                background: transparent;
+                border: none;
+            }
+        }
+    }
+}
