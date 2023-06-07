@@ -39,6 +39,10 @@ a {
     display: none !important;
 }
 
+.secondary-color {
+    color: $secondary;
+}
+
 /* Blocks */
 
 @import "blocks/mini-blocks/container";
@@ -85,5 +89,9 @@ a {
 @import "blocks/account/account-menu";
 
 // Pricelist page
-
 @import "blocks/pricelist/pricelist";
+
+// Aboutcompany page
+@import "blocks/aboutcompany/aboutcompany";
+@import "blocks/aboutcompany/mission";
+@import "blocks/aboutcompany/contacts";

@@ -1,0 +1,88 @@
+.contacts {
+    &__topblocks {
+        margin-bottom: 3.5rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        img {
+            border-radius: 0.5rem;
+        }
+        iframe {
+            width: 100%;
+            height: 37.9rem;
+            border-radius: 0.5rem;
+        }
+    }
+    &__list {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        &-title,
+        &-value {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 1.1rem 2.6rem 1rem 2.6rem;
+            border: 1px solid $secondary;
+            border-radius: 0.5rem;
+            height: 5.3rem;
+            text-transform: uppercase;
+        }
+        &-title {
+            position: relative;
+            max-width: 28.4rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: $secondary;
+            &::after {
+                content: url("../images/icons/plus.svg");
+                position: absolute;
+                bottom: -2.6rem;
+                right: -2.4rem;
+            }
+        }
+        &-value {
+            font-weight: 500;
+        }
+        &:last-of-type .contacts__item-title::after {
+            content: none;
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        iframe {
+            width: 100%;
+            height: 17.5rem;
+            border-radius: 0.5rem;
+        }
+    }
+    &__download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 28.4rem;
+        width: 100%;
+        button {
+            font-family: "Inter";
+            width: 17.5rem;
+            height: 17.5rem;
+            background: $secondary;
+            border-radius: 50%;
+            border: none;
+            color: $white;
+            font-weight: 700;
+            line-height: 155.1%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    }
+}
