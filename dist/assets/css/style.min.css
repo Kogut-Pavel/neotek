@@ -419,7 +419,8 @@ a {
     .btn_more_big {
       width: 100%; }
   .btn_action {
-    padding: 2rem 10rem;
+    padding: 2rem;
+    width: 100%;
     font-weight: 500;
     font-size: 1.6rem;
     color: #fff;
@@ -1957,3 +1958,60 @@ section, footer {
     line-height: 155.1%;
     letter-spacing: 0.05em;
     text-transform: uppercase; }
+
+.delivery__wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; }
+  .delivery__wrapper img {
+    border-radius: 0.5rem; }
+
+.delivery__title {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 111%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase; }
+
+.delivery__texts {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+  .delivery__texts p {
+    max-width: calc(50% - 1rem);
+    line-height: 111%;
+    letter-spacing: 0.05em; }
+
+.delivery__btn {
+  max-width: calc(50% - 1rem); }
+
+.payment__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 2rem; }
+
+.payment__images {
+  display: flex;
+  gap: 2rem; }
+  .payment__images img {
+    border-radius: .5rem; }
+
+.payment__text {
+  position: relative;
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap; }
+  .payment__text p {
+    width: 100%;
+    max-width: calc(50% - 1rem);
+    letter-spacing: 0.05em; }
+  .payment__text .image {
+    position: absolute;
+    bottom: -150%;
+    right: 0; }

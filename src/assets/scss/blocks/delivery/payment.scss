@@ -1,0 +1,35 @@
+.payment {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    &__images {
+        display: flex;
+        gap: 2rem;
+        img {
+            border-radius: .5rem;
+        }
+    }
+
+    &__text {
+        position: relative;
+        margin-top: 3rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        flex-wrap: wrap;
+        p {
+            width: 100%;
+            max-width: calc(50% - 1rem);
+            letter-spacing: 0.05em;
+        }
+        .image {
+            position: absolute;
+            bottom: -150%;
+            right: 0;
+        }
+    }
+}

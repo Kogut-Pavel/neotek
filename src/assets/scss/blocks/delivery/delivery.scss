@@ -1,0 +1,33 @@
+.delivery {
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        img {
+            border-radius: 0.5rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 111%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__texts {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        p {
+            max-width: calc(50% - 1rem);
+            line-height: 111%;
+            letter-spacing: 0.05em;
+        }
+    }
+    &__btn {
+        max-width: calc(50% - 1rem);
+    }
+}
