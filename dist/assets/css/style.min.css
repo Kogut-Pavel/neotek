@@ -2039,6 +2039,8 @@ section, footer {
   .application__wrapper img:not(.application__bigimg) {
     border-radius: 0.5rem;
     width: 285px; }
+  .application__wrapper p {
+    letter-spacing: 0.05em; }
 
 .application__btn {
   max-width: 285px;
