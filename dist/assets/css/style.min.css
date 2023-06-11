@@ -2015,3 +2015,112 @@ section, footer {
     position: absolute;
     bottom: -150%;
     right: 0; }
+
+.application__subtext {
+  margin-left: auto;
+  margin-bottom: 1.5rem;
+  max-width: 896px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 111%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #136FB6; }
+
+.application__ctamore {
+  max-width: calc(50% - 1rem);
+  margin-left: auto;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em; }
+
+.application__wrapper {
+  display: flex;
+  flex-direction: column; }
+  .application__wrapper img:not(.application__bigimg) {
+    border-radius: 0.5rem;
+    width: 285px; }
+
+.application__btn {
+  max-width: 285px;
+  height: 4.3rem;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  background-color: #136FB6;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 111%; }
+
+.application__bigimg {
+  height: 664px;
+  width: 100%;
+  border-radius: .5rem; }
+
+.grid__top {
+  display: grid;
+  grid-template-columns: 295px 305px 305px 295px;
+  grid-template-rows: 1fr;
+  border-top: 1px solid #136FB6; }
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2; }
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3; }
+
+.div3 {
+  grid-area: 1 / 3 / 2 / 4; }
+
+.div4 {
+  grid-area: 1 / 4 / 2 / 5; }
+
+.grid__middle {
+  display: grid;
+  grid-template-columns: 295px 305px 305px 295px;
+  grid-template-rows: repeat(2, 1fr); }
+
+.div5 {
+  grid-area: 1 / 1 / 2 / 2; }
+
+.div6 {
+  grid-area: 2 / 1 / 3 / 2; }
+
+.div7 {
+  grid-area: 1 / 2 / 3 / 4; }
+
+.div8 {
+  grid-area: 1 / 4 / 2 / 5; }
+
+.div9 {
+  grid-area: 2 / 4 / 3 / 5; }
+
+.grid__bottom {
+  display: grid;
+  grid-template-columns: 295px 305px 305px 295px;
+  grid-template-rows: 1fr; }
+
+.div10 {
+  grid-area: 1 / 1 / 2 / 2; }
+
+.div11 {
+  grid-area: 1 / 2 / 2 / 3; }
+
+.div12 {
+  grid-area: 1 / 3 / 2 / 4; }
+
+.div13 {
+  grid-area: 1 / 4 / 2 / 5; }
+
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-right: 1px solid #136FB6;
+  border-bottom: 1px solid #136FB6;
+  padding: 2rem 1rem; }
+
+.div1, .div5, .div6, .div10 {
+  padding-left: 0; }
+
+.div4, .div8, .div9, .div13 {
+  border-right: none;
+  padding-right: 0; }
