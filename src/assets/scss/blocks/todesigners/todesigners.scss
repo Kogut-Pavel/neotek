@@ -1,0 +1,33 @@
+.todesigners {
+    &__wrapper {
+        display: flex;
+        align-items: stretch;
+        align-content: stretch;
+        gap: 2rem;
+        img {
+            border-radius: .5rem;
+        }
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+        p {
+            letter-spacing: 0.05em;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5.1rem;
+        padding: 1.7rem;
+        font-weight: 500;
+        color: $white;
+        background-color: $secondary;
+        width: fit-content;
+        min-width: 24.4rem;
+    }
+}

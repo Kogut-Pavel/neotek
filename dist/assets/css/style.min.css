@@ -2126,3 +2126,31 @@ section, footer {
 .div4, .div8, .div9, .div13 {
   border-right: none;
   padding-right: 0; }
+
+.todesigners__wrapper {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 2rem; }
+  .todesigners__wrapper img {
+    border-radius: .5rem; }
+
+.todesigners__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem; }
+  .todesigners__block p {
+    letter-spacing: 0.05em; }
+
+.todesigners__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.1rem;
+  padding: 1.7rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #136FB6;
+  width: fit-content;
+  min-width: 24.4rem; }
