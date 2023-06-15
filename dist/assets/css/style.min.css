@@ -2258,3 +2258,42 @@ section, footer {
     .techdescription__underitem a img {
       width: 2.2rem;
       height: 2.2rem; }
+
+.technodes__ctamore {
+  max-width: calc(50% - 1rem);
+  margin-left: auto;
+  margin-bottom: 5rem;
+  letter-spacing: 0.05em; }
+
+.technodes__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem; }
+
+.technodes__title {
+  margin-bottom: 3.5rem;
+  color: #136FB6; }
+
+.technodes__block {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; }
+  .technodes__block img {
+    width: calc(50% - 1rem);
+    border: 1px solid #8b8b8b;
+    border-radius: .5rem; }
+  .technodes__block ul {
+    width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column; }
+    .technodes__block ul li {
+      padding: 1.9rem 2.6rem 1.8rem 2.6rem;
+      border-top: 1px solid #136FB6;
+      border-bottom: 1px solid #136FB6;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      text-transform: uppercase; }
+      .technodes__block ul li:first-child {
+        border-top: 2px solid #136FB6; }
+      .technodes__block ul li:last-child {
+        border-bottom: 2px solid #136FB6; }

@@ -1,0 +1,48 @@
+.technodes {
+    &__ctamore {
+        max-width: calc(50% - 1rem);
+        margin-left: auto;
+        margin-bottom: 5rem;
+        letter-spacing: 0.05em;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+    }
+    &__title {
+        margin-bottom: 3.5rem;
+        color: $secondary;
+    }
+    &__block {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        img {
+            width: calc(50% - 1rem);
+            border: 1px solid #8b8b8b;
+            border-radius: .5rem;
+        }
+        ul {
+            width: calc(50% - 1rem);
+            display: flex;
+            flex-direction: column;
+            li {
+                padding: 1.9rem 2.6rem 1.8rem 2.6rem;
+                border-top: 1px solid $secondary;
+                border-bottom: 1px solid $secondary;
+                border-radius: 0.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                &:first-child {
+                    border-top: 2px solid $secondary;
+                }
+                &:last-child {
+                    border-bottom: 2px solid $secondary;
+                }
+            }
+            
+            
+        }
+    }
+}
