@@ -1,0 +1,81 @@
+.techdescription {
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        position: relative;
+        padding: 2rem 2rem 2rem 3rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 111%;
+        text-transform: uppercase;
+        color: $secondary;
+        border: 1px solid $secondary;
+        border-radius: 5px;
+        &-title {
+            cursor: pointer;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        &::after {
+            content: url("../images/icons/big-triangle.svg");
+            position: absolute;
+            top: 2.1rem;
+            right: 2rem;
+            width: 2.1rem;
+            height: 1.9rem;
+            cursor: pointer;
+        }
+        &.active {
+            &::after {
+                transform: rotate(180deg);
+            }
+            .pricelist__underlist {
+                display: flex;
+            }
+        }
+    }
+    &__underlist {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    &__underitem {
+        padding-bottom: 1.1rem;
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        color: #000;
+        border-bottom: 1px solid #8b8b8b;
+        &-title {
+            max-width: 26rem;
+            width: 100%;
+            font-weight: 500;
+        }
+        p {
+            max-width: 59rem;
+            width: 100%;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 111%;
+            letter-spacing: 0.05em;
+            text-transform: none;
+        }
+        a {
+            padding: .5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: $secondary;
+            font-weight: 500;
+            border: 1px solid $secondary;
+            border-radius: .5rem;
+            img {
+                width: 2.2rem;
+                height: 2.2rem;
+            }
+        }
+    }
+}
