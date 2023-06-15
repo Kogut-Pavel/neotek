@@ -1,0 +1,42 @@
+.brochure {
+    &__item {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $secondary;
+        img {
+            max-width: 28.5rem;
+            width: 100%;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            gap: 3.1rem;
+            padding: .4rem 5.1rem .4rem 2.9rem;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 155.1%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $secondary;
+            border: 1px solid $secondary;
+            border-radius: 49px;
+            transition: all .2s linear;
+            &:hover {
+                background-color: $secondary;
+                color: $white;
+                img {
+                    transition: all 0.2s linear;
+                    filter: brightness(0) invert(1);
+                }
+            }
+            img {
+                width: 3.2rem;
+                height: 3.2rem;    
+            }
+        }
+    }
+}

@@ -3008,3 +3008,103 @@ section.pt-10, footer.pt-10 {
     border-right: none;
     padding-right: 0;
 }
+
+.todesigners__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    gap: 2rem;
+}
+
+.todesigners__wrapper img {
+    border-radius: .5rem;
+}
+
+.todesigners__block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.todesigners__block p {
+    letter-spacing: 0.05em;
+}
+
+.todesigners__btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 5.1rem;
+    padding: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #136FB6;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 24.4rem;
+}
+
+.brochure__item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #136FB6;
+}
+
+.brochure__item img {
+    max-width: 28.5rem;
+    width: 100%;
+}
+
+.brochure__item a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 3.1rem;
+    padding: .4rem 5.1rem .4rem 2.9rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 155.1%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #136FB6;
+    border: 1px solid #136FB6;
+    border-radius: 49px;
+    transition: all .2s linear;
+}
+
+.brochure__item a:hover {
+    background-color: #136FB6;
+    color: #fff;
+}
+
+.brochure__item a:hover img {
+    transition: all 0.2s linear;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.brochure__item a img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
