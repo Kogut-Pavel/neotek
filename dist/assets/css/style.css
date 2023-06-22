@@ -3108,3 +3108,161 @@ section.pt-10, footer.pt-10 {
     width: 3.2rem;
     height: 3.2rem;
 }
+
+.techdescription__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.techdescription__item {
+    position: relative;
+    padding: 2rem 2rem 2rem 3rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: #136FB6;
+    border: 1px solid #136FB6;
+    border-radius: 5px;
+}
+
+.techdescription__item-title {
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.techdescription__item::after {
+    content: url("../images/icons/big-triangle.svg");
+    position: absolute;
+    top: 2.1rem;
+    right: 2rem;
+    width: 2.1rem;
+    height: 1.9rem;
+    cursor: pointer;
+}
+
+.techdescription__item.active::after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.techdescription__item.active .pricelist__underlist {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.techdescription__underlist {
+    margin-top: 1.5rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.techdescription__underitem {
+    padding-bottom: 1.1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 2.5rem;
+    color: #000;
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.techdescription__underitem-title {
+    max-width: 26rem;
+    width: 100%;
+    font-weight: 500;
+}
+
+.techdescription__underitem p {
+    max-width: 59rem;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 111%;
+    letter-spacing: 0.05em;
+    text-transform: none;
+}
+
+.techdescription__underitem a {
+    padding: .5rem 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.8rem;
+    color: #136FB6;
+    font-weight: 500;
+    border: 1px solid #136FB6;
+    border-radius: .5rem;
+}
+
+.techdescription__underitem a img {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.technodes__ctamore {
+    max-width: calc(50% - 1rem);
+    margin-left: auto;
+    margin-bottom: 5rem;
+    letter-spacing: 0.05em;
+}
+
+.technodes__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.technodes__title {
+    margin-bottom: 3.5rem;
+    color: #136FB6;
+}
+
+.technodes__block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.technodes__block img {
+    width: calc(50% - 1rem);
+    border: 1px solid #8b8b8b;
+    border-radius: .5rem;
+}
+
+.technodes__block ul {
+    width: calc(50% - 1rem);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.technodes__block ul li {
+    padding: 1.9rem 2.6rem 1.8rem 2.6rem;
+    border-top: 1px solid #136FB6;
+    border-bottom: 1px solid #136FB6;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.technodes__block ul li:first-child {
+    border-top: 2px solid #136FB6;
+}
+
+.technodes__block ul li:last-child {
+    border-bottom: 2px solid #136FB6;
+}

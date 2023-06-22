@@ -1853,7 +1853,11 @@ section, footer {
   align-items: flex-start;
   gap: 2rem; }
   .aboutcompany__text p {
+    max-width: 50%;
     letter-spacing: 0.05em; }
+  .aboutcompany__text ul li {
+    margin-left: 2rem;
+    list-style-type: disc; }
 
 .aboutcompany__btn {
   position: absolute;
@@ -1881,6 +1885,7 @@ section, footer {
   align-items: flex-start;
   gap: 2rem; }
   .mission__text p {
+    max-width: calc(50% - 1rem);
     letter-spacing: 0.05em; }
 
 .contacts__topblocks {
@@ -2013,7 +2018,7 @@ section, footer {
     letter-spacing: 0.05em; }
   .payment__text .image {
     position: absolute;
-    bottom: -150%;
+    bottom: -53%;
     right: 0; }
 
 .application__subtext {
@@ -2268,13 +2273,13 @@ section, footer {
 .technodes__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 7rem; }
+  gap: 3.5rem; }
 
 .technodes__title {
-  margin-bottom: 3.5rem;
   color: #136FB6; }
 
 .technodes__block {
+  margin-bottom: 7rem;
   display: flex;
   align-items: flex-start;
   gap: 2rem; }

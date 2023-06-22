@@ -20,6 +20,7 @@
         align-items: flex-start;
         gap: 2rem;
         p {
+            max-width: calc(50% - 1rem);
             letter-spacing: 0.05em;
         }
     }

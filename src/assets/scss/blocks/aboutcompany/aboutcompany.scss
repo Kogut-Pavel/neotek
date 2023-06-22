@@ -15,7 +15,14 @@
         align-items: flex-start;
         gap: 2rem;
         p {
+            max-width: 50%;
             letter-spacing: 0.05em;
+        }
+        ul {
+            li {
+                margin-left: 2rem;
+                list-style-type: disc;
+            }
         }
     }
     &__btn {
