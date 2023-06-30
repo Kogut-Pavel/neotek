@@ -2624,7 +2624,13 @@ section.pt-10, footer.pt-10 {
 }
 
 .aboutcompany__text p {
+    max-width: 50%;
     letter-spacing: 0.05em;
+}
+
+.aboutcompany__text ul li {
+    margin-left: 2rem;
+    list-style-type: disc;
 }
 
 .aboutcompany__btn {
@@ -2666,6 +2672,7 @@ section.pt-10, footer.pt-10 {
 }
 
 .mission__text p {
+    max-width: calc(50% - 1rem);
     letter-spacing: 0.05em;
 }
 
@@ -2862,7 +2869,7 @@ section.pt-10, footer.pt-10 {
 
 .payment__text .image {
     position: absolute;
-    bottom: -150%;
+    bottom: -53%;
     right: 0;
 }
 
@@ -3220,15 +3227,15 @@ section.pt-10, footer.pt-10 {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 7rem;
+    gap: 3.5rem;
 }
 
 .technodes__title {
-    margin-bottom: 3.5rem;
     color: #136FB6;
 }
 
 .technodes__block {
+    margin-bottom: 7rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;

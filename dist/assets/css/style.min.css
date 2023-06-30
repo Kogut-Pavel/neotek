@@ -564,6 +564,15 @@ section, footer {
     align-items: center;
     justify-content: center; }
 
+@media (max-width: 1230px) {
+  .container {
+    position: relative;
+    max-width: 750px; } }
+
+@media (max-width: 768px) {
+  .contactsblock {
+    display: none; } }
+
 .header {
   padding: 1rem 0 5rem 0;
   background: url("../images/header/bg.svg") no-repeat;
@@ -573,16 +582,6 @@ section, footer {
     left: 0;
     right: 0;
     z-index: 9; }
-  .header.line .header__inner {
-    position: relative; }
-    .header.line .header__inner::after {
-      content: '';
-      position: absolute;
-      width: 903px;
-      height: 1px;
-      background: #136FB6;
-      bottom: 0;
-      right: 0; }
   .header__wrapper {
     display: flex;
     justify-content: space-between; }
@@ -631,6 +630,14 @@ section, footer {
         background-image: url("../images/header/cart-icon.svg"); }
       .header__btns a:nth-child(3) {
         background-image: url("../images/header/auth-icon.svg"); }
+  .header__mobile-menu {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 33rem;
+    top: 105%;
+    right: 1.5rem;
+    transition: all 0.2s linear; }
 
 .footer {
   margin-top: auto;
@@ -713,6 +720,107 @@ section, footer {
     text-align: right;
     line-height: 116%;
     letter-spacing: 0.05em; }
+
+@media (max-width: 1230px) {
+  .header {
+    padding: 1rem 0 6rem 0; }
+    .header__logo img {
+      height: 80px; }
+    .header__top {
+      gap: 7.7rem; }
+      .header__top nav {
+        display: none; }
+    .header .menu-btn {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      right: 0;
+      z-index: 99;
+      overflow: hidden; }
+    .header .menu-btn span {
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 5px;
+      transition: all 0.5s; }
+    .header .menu-btn span:nth-of-type(2) {
+      top: calc(50% - 9px); }
+    .header .menu-btn span:nth-of-type(3) {
+      top: calc(50% + 9px); }
+    .header .menu-btn.active span:nth-of-type(1) {
+      display: none; }
+    .header .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg); }
+    .header .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg); }
+    .header__bottom {
+      justify-content: flex-end; }
+      .header__bottom nav {
+        display: none; }
+    .header__btns a {
+      width: 3.3rem;
+      height: 3.3rem; }
+    .header__mobile-menu ul {
+      display: flex;
+      flex-direction: column; }
+      .header__mobile-menu ul li {
+        background: #136FB6;
+        border: 1px solid #fff;
+        font-weight: 700;
+        line-height: 155.1%;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        color: #fff;
+        transition: all 0.2s linear; }
+        .header__mobile-menu ul li:hover {
+          background: #fff;
+          color: #000; }
+        .header__mobile-menu ul li:last-child {
+          display: none;
+          text-transform: unset; }
+          .header__mobile-menu ul li:last-child:hover {
+            background: #136FB6;
+            color: #fff; }
+        .header__mobile-menu ul li > a {
+          padding: 1.2rem 2rem;
+          display: block; }
+    .header__mobile-menu.active {
+      z-index: 9;
+      opacity: 1;
+      pointer-events: unset; } }
+
+@media (max-width: 768px) {
+  .header__logo {
+    padding-top: 3rem; }
+    .header__logo img {
+      width: 95%;
+      height: 66px; }
+  .header__btns a {
+    width: 2.9rem;
+    height: 2.9rem; }
+  .header__mobile-menu {
+    width: 32rem; }
+    .header__mobile-menu ul li {
+      font-weight: 500; }
+      .header__mobile-menu ul li:last-child {
+        display: block;
+        padding: 1.2rem 1rem; }
+        .header__mobile-menu ul li:last-child .contactsblock {
+          display: flex; }
+      .header__mobile-menu ul li > a {
+        padding: 1.2rem 1rem; } }
+
+@media (max-width: 425px) {
+  .header__mobile-menu {
+    width: 100%;
+    right: 0; } }
 
 .hero {
   height: 100vh;

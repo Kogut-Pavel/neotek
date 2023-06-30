@@ -1,0 +1,16 @@
+@media (max-width: 1230px) {
+    .container {
+        position: relative;
+        max-width: 750px;
+    }
+
+    // .contactsblock {
+    //     margin-right: 7.7rem;
+    // }
+}
+
+@media (max-width: 768px) {
+    .contactsblock {
+        display: none;
+    }
+}

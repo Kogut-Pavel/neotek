@@ -15,7 +15,7 @@
     
     <title>НЕОТЕК</title>
 </head>
-<body>
+<body class="body">
 
     <!-- Header -->
     <header class="header line">
@@ -23,7 +23,10 @@
             <div class="header__wrapper">
                 <div class="header__logo">
                     <a href="index.html">
-                        <img src="assets/images/header/logo.png" alt="НЕОТЕК">
+                        <picture>
+                            <source srcset="assets/images/header/logo-sm.png" media="(max-width: 768px)">
+                            <img src="assets/images/header/logo.png" alt="НЕОТЕК">
+                        </picture>
                     </a>
                 </div>
                 <div class="header__inner">
@@ -46,6 +49,11 @@
                                 <a class="contactsblock__tel" href="tel:+78482790790">+7 (848) 2-790-790</a>
                             </div>
                         </div>
+                        <div class="menu-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
             
                     <div class="header__bottom">
@@ -65,9 +73,35 @@
                             <a href="account.html" class="header__icon"></a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
+            <nav class="header__mobile-menu">
+                <ul>
+                    <li><a href="aboutcompany.html">О компании</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                    <li><a href="#">Производители</a></li>
+                    <li><a href="application.html">Область применения</a></li>
+                    <li><a href="pricelist.html">Прайс-лист</a></li>
+                    <li><a href="todesigners.html">Проектировщикам</a></li>
+                    <li>
+                        <div class="contactsblock">
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Самара:</span>
+                                <a class="contactsblock__tel" href="tel:+78469906988">+7 (846) 990-69-88</a>
+                            </div>
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Тольятти:</span>
+                                <a class="contactsblock__tel" href="tel:+78482790790">+7 (848) 2-790-790</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
+        
     </header>
 
     <!-- Main -->
@@ -85,18 +119,53 @@
                     <p class="section__text">В каждом выпуске Вы найдете описание объектов, применения и презентацию новых продуктов MAPEI.</p>
                 </div>
         
-                <div class="brochure__wrapper">
-                    <div class="brochure__item">
+                <div class="brochure__wrapper parent">
+                    <div class="brochure__item div1">
                         <img src="assets/images/brochure/brochure35.jpg" alt="#">
                         <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
                     </div>
+                    <!-- <div class="brochure__item div2">
+                        <img src="assets/images/brochure/brochure35.jpg" alt="#">
+                        <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
+                    </div>
+                    <div class="brochure__item div3">
+                        <img src="assets/images/brochure/brochure35.jpg" alt="#">
+                        <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
+                    </div>
+                    <div class="brochure__item div4">
+                        <img src="assets/images/brochure/brochure35.jpg" alt="#">
+                        <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
+                    </div>
+                    <div class="brochure__item div5">
+                        <img src="assets/images/brochure/brochure35.jpg" alt="#">
+                        <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
+                    </div>
+                    <div class="brochure__item div6">
+                        <img src="assets/images/brochure/brochure35.jpg" alt="#">
+                        <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
+                    </div>
+                    <div class="div7">
+                        <img src="assets/images/brochure/big.jpg" alt="#">
+                    </div>
+                    <div class="brochure__item div8">
+                        <img src="assets/images/brochure/brochure35.jpg" alt="#">
+                        <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
+                    </div>
+                    <div class="brochure__item div9">
+                        <img src="assets/images/brochure/brochure35.jpg" alt="#">
+                        <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
+                    </div>
+                    <div class="brochure__item div10">
+                        <img src="assets/images/brochure/brochure35.jpg" alt="#">
+                        <a href="#" download>Скачать pdf <img src="assets/images/icons/download-blue.svg" alt=""></a>
+                    </div> -->
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__wrapper">
             <div class="container">
                 <div class="footer__text">
@@ -180,7 +249,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- JS -->
     <script src="assets/js/app.js"></script>

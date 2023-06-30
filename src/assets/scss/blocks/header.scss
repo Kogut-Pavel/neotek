@@ -5,21 +5,21 @@
         right: 0;
         z-index: 9;
     }
-    &.line {
-        .header__inner {
-            position: relative;
-            &::after {
-                content: '';
-                position: absolute;
-                // max-width: 100%;
-                width: 903px;
-                height: 1px;
-                background: $secondary;
-                bottom: 0;
-                right: 0;
-            }
-        }
-    }
+    // &.line {
+    //     .header__inner {
+    //         position: relative;
+    //         &::after {
+    //             content: '';
+    //             position: absolute;
+    //             // max-width: 100%;
+    //             width: 903px;
+    //             height: 1px;
+    //             background: $secondary;
+    //             bottom: 0;
+    //             right: 0;
+    //         }
+    //     }
+    // }
     padding: 1rem 0 5rem 0;
     background: url("../images/header/bg.svg") no-repeat;
     background-size: 100% 100%;
@@ -83,5 +83,14 @@
                 background-image: url("../images/header/auth-icon.svg");
             }
         }
+    }
+    &__mobile-menu {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        width: 33rem;
+        top: 105%;
+        right: 1.5rem;
+        transition: all 0.2s linear;
     }
 }

@@ -53,10 +53,12 @@ a {
 @import "blocks/mini-blocks/product";
 @import "blocks/mini-blocks/breadcrumb";
 @import "blocks/mini-blocks/counter";
+@import "blocks/mini-blocks/mini-blocks-media";
 
 // Common blocks
 @import "blocks/header";
 @import "blocks/footer";
+@import "blocks/general-media";
 
 // Main page(index)
 @import "blocks/main/hero";
@@ -67,6 +69,7 @@ a {
 @import "blocks/main/any-questions";
 @import "blocks/main/news";
 @import "blocks/main/objects";
+@import "blocks/main/main-media";
 
 // Catalog page
 @import "blocks/catalog/catalog";
