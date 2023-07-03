@@ -14,6 +14,10 @@
         }
 
     }
+
+    .product {
+        max-width: 348px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -25,11 +29,30 @@
         &_h1 {
             font-size: 2.2rem;
         }
-
+        &_h2 {
+            font-size: 1.6rem;
+        }
     }
 
     .btn {
         padding: 1.2rem 4rem;
+    }
+    
+    section, footer {
+        padding: 3.5rem 0;
+        &.pt-10 {
+            padding-top: 3.5rem;
+        }
+    }
+
+    .section {
+        &__header {
+            flex-direction: column;
+            gap: 1rem;
+        }
+        &__text {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -39,10 +62,22 @@
         &_h1 {
             font-size: 1.5rem;
         }
-
+        &_h2 {
+            font-size: 1.4rem;
+        }
     }
 
     .btn {
         padding: 1rem 2.5rem;
+    }
+
+    .section {
+        &__header {
+            flex-direction: column;
+            margin-bottom: 2.5rem;
+        }
+        &__text {
+            font-size: 1.5rem;
+        }
     }
 }
