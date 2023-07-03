@@ -567,11 +567,23 @@ section, footer {
 @media (max-width: 1230px) {
   .container {
     position: relative;
-    max-width: 750px; } }
+    max-width: 750px; }
+  .title_h1 {
+    font-size: 3.5rem; } }
 
 @media (max-width: 768px) {
   .contactsblock {
-    display: none; } }
+    display: none; }
+  .title_h1 {
+    font-size: 2.2rem; }
+  .btn {
+    padding: 1.2rem 4rem; } }
+
+@media (max-width: 425px) {
+  .title_h1 {
+    font-size: 1.5rem; }
+  .btn {
+    padding: 1rem 2.5rem; } }
 
 .header {
   padding: 1rem 0 5rem 0;
@@ -724,6 +736,8 @@ section, footer {
 @media (max-width: 1230px) {
   .header {
     padding: 1rem 0 6rem 0; }
+    .header .container {
+      max-width: 850px; }
     .header__logo img {
       height: 80px; }
     .header__top {
@@ -797,30 +811,34 @@ section, footer {
       pointer-events: unset; } }
 
 @media (max-width: 768px) {
-  .header__logo {
-    padding-top: 3rem; }
-    .header__logo img {
-      width: 95%;
-      height: 66px; }
-  .header__btns a {
-    width: 2.9rem;
-    height: 2.9rem; }
-  .header__mobile-menu {
-    width: 32rem; }
-    .header__mobile-menu ul li {
-      font-weight: 500; }
-      .header__mobile-menu ul li:last-child {
-        display: block;
-        padding: 1.2rem 1rem; }
-        .header__mobile-menu ul li:last-child .contactsblock {
-          display: flex; }
-      .header__mobile-menu ul li > a {
-        padding: 1.2rem 1rem; } }
+  .header {
+    padding: 1rem 3rem 5rem 3rem; }
+    .header__logo {
+      padding-top: 3rem; }
+      .header__logo img {
+        width: 95%;
+        height: 66px; }
+    .header__btns a {
+      width: 2.9rem;
+      height: 2.9rem; }
+    .header__mobile-menu {
+      width: 32rem; }
+      .header__mobile-menu ul li {
+        font-weight: 500; }
+        .header__mobile-menu ul li:last-child {
+          display: block;
+          padding: 1.2rem 1rem; }
+          .header__mobile-menu ul li:last-child .contactsblock {
+            display: flex; }
+        .header__mobile-menu ul li > a {
+          padding: 1.2rem 1rem; } }
 
 @media (max-width: 425px) {
-  .header__mobile-menu {
-    width: 100%;
-    right: 0; } }
+  .header {
+    padding: 1rem 0 5rem 0; }
+    .header__mobile-menu {
+      width: 100%;
+      right: 0; } }
 
 .hero {
   height: 100vh;
@@ -833,7 +851,7 @@ section, footer {
     justify-content: space-between;
     margin-top: 3rem; }
   .hero__left ul {
-    max-width: 38rem;
+    max-width: 34.8rem;
     padding-left: 1.6rem;
     margin-bottom: 3.5rem; }
     .hero__left ul li {
@@ -843,6 +861,9 @@ section, footer {
       line-height: 118%;
       text-transform: uppercase;
       color: #fff; }
+  .hero__left .btn {
+    display: block;
+    width: fit-content; }
   .hero__right {
     max-width: 682px;
     padding: 4.6rem 7.1rem 4.6rem 0.6rem;
@@ -1175,6 +1196,60 @@ section, footer {
   letter-spacing: 0.05em; }
   .objects__text a {
     color: #136FB6; }
+
+@media (max-width: 1230px) {
+  .hero {
+    background-position: 0% 50%;
+    padding: 18rem 0 3.6rem 0; }
+    .hero__wrapper {
+      margin-top: 1.5rem; }
+    .hero__left ul li {
+      font-size: 1.4rem; }
+    .hero__right {
+      max-width: 348px;
+      padding: 2rem 3rem 2rem 0; }
+    .hero__product {
+      gap: .7rem; }
+      .hero__product img {
+        width: 130px; }
+      .hero__product-descr {
+        margin: .5rem 0 1.5rem 0; }
+      .hero__product .mobile-hidden {
+        display: none; } }
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: 0% 50%;
+    padding: 18rem 0 3.6rem 0; }
+    .hero__wrapper {
+      margin-top: 1.5rem;
+      flex-direction: column;
+      gap: 2.5rem; }
+    .hero__left ul {
+      margin-bottom: 2rem; }
+      .hero__left ul li {
+        font-size: 1.2rem; }
+    .hero__right {
+      max-width: 388px;
+      padding: 2rem 3rem 2rem 0; } }
+
+@media (max-width: 425px) {
+  .hero {
+    background-position: 30% 50%;
+    padding: 17rem 0 2rem 0; }
+    .hero__wrapper {
+      margin-top: 1.5rem;
+      flex-direction: column;
+      gap: 2.5rem; }
+    .hero__left ul {
+      margin-bottom: 2rem; }
+      .hero__left ul li {
+        font-size: 1rem; }
+    .hero__right {
+      max-width: 100%;
+      padding: 1.3rem 1rem .8rem 0; }
+    .hero__product {
+      gap: .3rem; } }
 
 .catalog {
   padding-top: 0; }

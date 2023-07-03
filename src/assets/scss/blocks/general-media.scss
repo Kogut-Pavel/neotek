@@ -1,6 +1,9 @@
 @media (max-width: 1230px) {
     .header {
         padding: 1rem 0 6rem 0;
+        .container {
+            max-width: 850px;
+        }
         &__logo {
             img {
                 height: 80px;
@@ -103,6 +106,7 @@
 
 @media (max-width: 768px) {
     .header {
+        padding: 1rem 3rem 5rem 3rem;
         &__logo {
             padding-top: 3rem;
             img {
@@ -140,6 +144,7 @@
 
 @media (max-width: 425px) {
     .header {
+        padding: 1rem 0 5rem 0;
         &__mobile-menu {
             width: 100%;
             right: 0;
