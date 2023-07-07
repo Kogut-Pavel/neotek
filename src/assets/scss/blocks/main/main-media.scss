@@ -17,12 +17,12 @@
             padding: 2rem 3rem 2rem 0;
         }
         &__product {
-            gap: .7rem;
+            gap: 0.7rem;
             img {
                 width: 130px;
             }
             &-descr {
-                margin: .5rem 0 1.5rem 0;
+                margin: 0.5rem 0 1.5rem 0;
             }
             .mobile-hidden {
                 display: none;
@@ -34,6 +34,42 @@
         &__wrapper {
             justify-content: center;
             gap: 2.4rem;
+        }
+    }
+
+    .about {
+        &__wrapper {
+            margin-top: 4rem;
+            justify-content: center;
+            grid-template-areas:
+                "block2 block4"
+                "block10 block4"
+                // "block10 block4"
+                "block5 block6"
+                "block7 block9";
+        }
+        &__item,
+        .about__item img {
+            // max-width: 100%;
+            width: 348px;
+            min-height: 189px;
+            height: auto;
+        }
+
+        .block3 {
+            height: auto;
+        }
+        .block11,
+        .block8,
+        .block3,
+        .block1 {
+            display: none;
+        }
+        .plus {
+            &::before {
+                left: -23px;
+                right: unset;
+            }
         }
     }
 }
@@ -59,12 +95,42 @@
             max-width: 388px;
             padding: 2rem 3rem 2rem 0;
         }
-        
     }
 
     .best-products {
         &__cta {
             height: 25rem;
+        }
+    }
+
+    .about {
+        &__wrapper {
+            margin-top: 2.5rem;
+            gap: 1rem;
+            grid-template-areas:
+                "block2 block4"
+                "block7 block4"
+                "block5 block5"
+                "block6 block6"
+                "block9 block9";
+        }
+        &__item,
+        .about__item img {
+            min-height: unset;
+            height: 100%;
+            max-width: 100%;
+            width: 100%;
+        }
+        .block10 {
+            display: none;
+        }
+        .info-block {
+            min-height: 180px;
+        }
+        .plus {
+            &::before {
+                content: none;
+            }
         }
     }
 }
@@ -82,11 +148,10 @@
         }
         &__right {
             max-width: 100%;
-            padding: 1.3rem 1rem .8rem 0;
+            padding: 1.3rem 1rem 0.8rem 0;
         }
         &__product {
-            gap: .3rem;
+            gap: 0.3rem;
         }
-        
     }
 }
