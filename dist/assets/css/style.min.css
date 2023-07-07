@@ -1292,7 +1292,13 @@ section, footer {
   .about .info-block {
     min-height: 180px; }
   .about .plus::before {
-    content: none; } }
+    content: none; }
+  .clients__wrapper,
+  .clients .marquee {
+    height: 10.9rem; }
+    .clients__wrapper img,
+    .clients .marquee img {
+      max-height: 9rem; } }
 
 @media (max-width: 425px) {
   .hero {

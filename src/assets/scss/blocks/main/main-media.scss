@@ -133,6 +133,15 @@
             }
         }
     }
+    .clients {
+        &__wrapper,
+        .marquee {
+            height: 10.9rem;
+            img {
+                max-height: 9rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 425px) {
