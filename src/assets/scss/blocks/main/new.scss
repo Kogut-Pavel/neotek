@@ -1,11 +1,13 @@
 .new {
     &__wrapper {
         position: relative;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-areas:
+            "block1 block2"
+            "block3 block4";
         gap: 1.5rem;
         &::before {
-            content: url('../images/icons/plus.svg');
+            content: url("../images/icons/plus.svg");
             position: absolute;
             top: 50.7%;
             left: 49.8%;
@@ -13,7 +15,32 @@
             width: 2.5rem;
             height: 2.5rem;
         }
+        .block1 {
+            grid-area: block1;
+        }
+        .block2 {
+            grid-area: block2;
+        }
+        .block3 {
+            grid-area: block3;
+        }
+        .block4 {
+            grid-area: block4;
+        }
     }
+
+    .plus {
+        position: relative;
+        &::after {
+            content: none;
+            position: absolute;
+            top: -23px;
+            right: -23px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
     &__block {
         max-width: 590px;
         display: flex;
