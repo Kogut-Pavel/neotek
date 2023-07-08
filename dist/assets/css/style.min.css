@@ -1294,7 +1294,21 @@ section, footer {
     max-width: calc(50% - 1.2rem); }
   .any-questions__form {
     margin-top: 4rem;
-    gap: 2.4rem; } }
+    gap: 2.4rem; }
+  .news__wrapper::before {
+    left: 49.5%; }
+  .news__item {
+    min-height: 18rem; }
+  .news__images {
+    max-width: calc(50% - 1.2rem); }
+    .news__images img {
+      max-width: calc(50% - .5rem); }
+  .news__descr {
+    max-width: calc(50% - 1.2rem);
+    width: 100%; }
+  .news__btn a {
+    max-width: 85%;
+    padding: 2.3rem 4rem 2.2rem 4rem; } }
 
 @media (max-width: 768px) {
   .hero {
@@ -1349,7 +1363,32 @@ section, footer {
     height: 5.8rem; }
   .any-questions__form input[type="tel"] {
     height: 5.8rem;
-    padding: 2rem 1rem 1.5rem 1rem; } }
+    padding: 2rem 1rem 1.5rem 1rem; }
+  .news__wrapper {
+    margin-bottom: 2rem;
+    gap: 2.5rem; }
+    .news__wrapper::before {
+      content: none; }
+  .news__item {
+    flex-direction: column;
+    gap: 1rem; }
+  .news__images {
+    max-width: 100%;
+    justify-content: space-between; }
+    .news__images img {
+      max-width: calc(50% - .5rem);
+      width: 100%; }
+  .news__descr {
+    max-width: 100%;
+    width: 100%;
+    min-height: 15rem; }
+  .news__btn {
+    display: block; }
+    .news__btn div {
+      display: none; }
+    .news__btn a {
+      max-width: 100%;
+      width: 100%; } }
 
 @media (max-width: 560px) {
   .new__wrapper {
