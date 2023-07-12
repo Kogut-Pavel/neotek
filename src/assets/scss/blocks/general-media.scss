@@ -79,7 +79,7 @@
                     transition: all 0.2s linear;
                     &:hover {
                         background: $white;
-                        color: $primary
+                        color: $primary;
                     }
                     &:last-child {
                         display: none;
@@ -99,6 +99,82 @@
                 z-index: 9;
                 opacity: 1;
                 pointer-events: unset;
+            }
+        }
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+
+        .footer__text {
+            margin-bottom: 3.5rem;
+            width: 40%;
+            span {
+                display: block;
+                margin-top: 0.5rem;
+            }
+        }
+        .footer__inner {
+            margin-bottom: 3.5rem;
+            justify-content: space-between;
+        }
+        .footer__col {
+            width: unset;
+        }
+        .footer__name {
+            margin-bottom: 4rem;
+        }
+
+        .contactsblock {
+            display: flex;
+        }
+
+        .footer__inner-right {
+            display: flex;
+            gap: 3rem;
+        }
+
+        .footer__btns {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: unset;
+            margin-bottom: 1rem;
+            a:nth-child(2) {
+                padding: 1.5rem;
+                max-width: unset;
+            }
+            .footer__col {
+                min-width: 21rem;
+            }
+            .footer__col {
+                max-width: 100%;
+                .politic {
+                    max-width: 35.3rem;
+                    padding: 1.3rem 1.8rem;
+                    gap: 1rem;
+                    width: 100%;
+                }
+            }
+            .lk {
+                padding: 1.9rem;
+                width: fit-content;
+            }
+
+            .footer__contacts {
+                margin-top: 2.8rem;
+            }
+        }
+        .footer__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .footer__confident,
+            .footer__dev {
+                margin-top: 0;
             }
         }
     }
@@ -139,8 +215,79 @@
             }
         }
     }
+
+    .footer-mobile {
+        .footer__text {
+            width: 70%;
+        }
+        .footer__inner-right {
+            flex-direction: column;
+        }
+        .footer__btns {
+            margin-bottom: 3rem;
+            flex-direction: column;
+        }
+    }
 }
 
+@media (max-width: 490px) {
+    .footer-mobile {
+        .footer__wrapper {
+            padding: 4.2rem 0 2.5rem 0;
+            background-position-x: 80%;
+        }
+        .footer__text {
+            width: 70%;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            span {
+                font-weight: 700;
+            }
+        }
+        .footer__inner {
+            flex-direction: column;
+            gap: 2.5rem;
+            .footer__col ul {
+                gap: 1rem;
+            }
+            .footer__inner-right {
+                gap: 2rem;
+            }
+        }
+        .footer__name {
+            margin-bottom: 1rem;
+            p {
+                display: none;
+            }
+        }
+        .footer__inner-right {
+            flex-direction: column;
+        }
+        .footer__btns {
+            margin-bottom: 2rem;
+
+            .row {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .footer__col {
+                .politic {
+                    max-width: 23rem;
+                    padding: 0;
+                    border: none;
+                    font-weight: 400;
+                    text-transform: unset;
+                    img {
+                        display: none;
+                    }
+                }
+            }
+            .footer__contacts {
+                margin-top: 0;
+            }
+        }
+    }
+}
 
 @media (max-width: 425px) {
     .header {

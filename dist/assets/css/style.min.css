@@ -676,6 +676,8 @@ section, footer {
   margin-top: auto;
   padding-bottom: 0;
   color: #fff; }
+  .footer-mobile {
+    display: none; }
   .footer__wrapper {
     padding: 6.3rem 0 3.5rem 0;
     background: url("../images/footer/bg.png") 100%/cover no-repeat; }
@@ -686,6 +688,8 @@ section, footer {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     line-height: 155%; }
+    .footer__text span {
+      display: none; }
   .footer__inner {
     display: flex;
     align-items: flex-start;
@@ -829,7 +833,58 @@ section, footer {
     .header__mobile-menu.active {
       z-index: 9;
       opacity: 1;
-      pointer-events: unset; } }
+      pointer-events: unset; }
+  .footer {
+    display: none; }
+  .footer-mobile {
+    display: block; }
+    .footer-mobile .footer__text {
+      margin-bottom: 3.5rem;
+      width: 40%; }
+      .footer-mobile .footer__text span {
+        display: block;
+        margin-top: 0.5rem; }
+    .footer-mobile .footer__inner {
+      margin-bottom: 3.5rem;
+      justify-content: space-between; }
+    .footer-mobile .footer__col {
+      width: unset; }
+    .footer-mobile .footer__name {
+      margin-bottom: 4rem; }
+    .footer-mobile .contactsblock {
+      display: flex; }
+    .footer-mobile .footer__inner-right {
+      display: flex;
+      gap: 3rem; }
+    .footer-mobile .footer__btns {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: unset;
+      margin-bottom: 1rem; }
+      .footer-mobile .footer__btns a:nth-child(2) {
+        padding: 1.5rem;
+        max-width: unset; }
+      .footer-mobile .footer__btns .footer__col {
+        min-width: 21rem; }
+      .footer-mobile .footer__btns .footer__col {
+        max-width: 100%; }
+        .footer-mobile .footer__btns .footer__col .politic {
+          max-width: 35.3rem;
+          padding: 1.3rem 1.8rem;
+          gap: 1rem;
+          width: 100%; }
+      .footer-mobile .footer__btns .lk {
+        padding: 1.9rem;
+        width: fit-content; }
+      .footer-mobile .footer__btns .footer__contacts {
+        margin-top: 2.8rem; }
+    .footer-mobile .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .footer-mobile .footer__bottom .footer__confident,
+      .footer-mobile .footer__bottom .footer__dev {
+        margin-top: 0; } }
 
 @media (max-width: 768px) {
   .header {
@@ -852,7 +907,53 @@ section, footer {
           .header__mobile-menu ul li:last-child .contactsblock {
             display: flex; }
         .header__mobile-menu ul li > a {
-          padding: 1.2rem 1rem; } }
+          padding: 1.2rem 1rem; }
+  .footer-mobile .footer__text {
+    width: 70%; }
+  .footer-mobile .footer__inner-right {
+    flex-direction: column; }
+  .footer-mobile .footer__btns {
+    margin-bottom: 3rem;
+    flex-direction: column; } }
+
+@media (max-width: 490px) {
+  .footer-mobile .footer__wrapper {
+    padding: 4.2rem 0 2.5rem 0;
+    background-position-x: 80%; }
+  .footer-mobile .footer__text {
+    width: 70%;
+    margin-bottom: 2rem;
+    font-weight: 400; }
+    .footer-mobile .footer__text span {
+      font-weight: 700; }
+  .footer-mobile .footer__inner {
+    flex-direction: column;
+    gap: 2.5rem; }
+    .footer-mobile .footer__inner .footer__col ul {
+      gap: 1rem; }
+    .footer-mobile .footer__inner .footer__inner-right {
+      gap: 2rem; }
+  .footer-mobile .footer__name {
+    margin-bottom: 1rem; }
+    .footer-mobile .footer__name p {
+      display: none; }
+  .footer-mobile .footer__inner-right {
+    flex-direction: column; }
+  .footer-mobile .footer__btns {
+    margin-bottom: 2rem; }
+    .footer-mobile .footer__btns .row {
+      display: flex;
+      flex-direction: column-reverse; }
+    .footer-mobile .footer__btns .footer__col .politic {
+      max-width: 23rem;
+      padding: 0;
+      border: none;
+      font-weight: 400;
+      text-transform: unset; }
+      .footer-mobile .footer__btns .footer__col .politic img {
+        display: none; }
+    .footer-mobile .footer__btns .footer__contacts {
+      margin-top: 0; } }
 
 @media (max-width: 425px) {
   .header {

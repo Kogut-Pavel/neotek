@@ -1,4 +1,7 @@
 .footer {
+    &-mobile {
+        display: none;
+    }
     margin-top: auto;
     padding-bottom: 0;
     color: $white;
@@ -13,6 +16,9 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         line-height: 155%;
+        span {
+            display: none;
+        }
     }
 
     &__inner {
