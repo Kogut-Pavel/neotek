@@ -349,6 +349,109 @@
     </footer>
     
 
+    <div class="modal" id="reg-modal">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/icons/close.svg" alt="close">
+            </button>
+            <h2 class="title_h2">Регистрация</h2>
+            <p class="modal__undertitle">Чтобы добавить товар в корзину нужно зарегистрироваться. Сделаем это?</p>
+            <form action="/" method="post" class="form">
+                <div class="form__group form__group--mb">
+                    <input type="e-mail" class="form__control" placeholder="E-mail">
+                </div>
+                <div class="form__group form__group--mb">
+                    <input type="tel" class="form__control" placeholder="Контактный телефон">
+                </div>
+                <div class="form__group form__group--mb">
+                    <input type="text" class="form__control" placeholder="Ваш город">
+                </div>
+                <div class="form__group form__group--mb">
+                    <select name="" id="">
+                        <option value="Физическое лицо">Физическое лицо</option>
+                        <option value="Юридическое лицо">Юридическое лицо</option>
+                        <option value="ИП">ИП</option>
+                    </select>
+                </div>
+                <div class="form__group form__group--mb">
+                    <input type="password" class="form__control" placeholder="Пароль">
+                </div>
+                <div class="form__group form__group--mb">
+                    <input type="password" class="form__control" placeholder="Повторный пароль">
+                </div>
+                <p class="modal__text">Для обеспечения безопасности, пароль должен содержать минимум 8 символов, обязательно должны присутствовать цифры, буквы латиницей строчные и заглавные</p>
+                <div class="form__footer">
+                    <div class="form__group form__group--mb">
+                        <button type="submit" class="btn form__btn">Войти</button>
+                    </div>
+                    <div class="form__block">
+                        <p>Есть аккаунт?</p>
+                        <button data-modal="authorization-modal">Войти</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="modal" id="authorization-modal">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/icons/close.svg" alt="close">
+            </button>
+            <h2 class="title_h2">Авторизация</h2>
+            <p class="modal__undertitle">Чтобы добавить товар в корзину нужно авторизоваться. Сделаем это?</p>
+            <form action="/" method="post" class="form">
+                <div class="form__group form__group--mb">
+                    <input type="e-mail" class="form__control" placeholder="E-mail">
+                </div>   
+                <div class="form__group form__group--mb">
+                    <input type="password" class="form__control" placeholder="Пароль">
+                </div>
+                <div class="form__error-block">Неправильная почта или пароль</div>
+                <div class="form__group form__checkbox">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Запомнить</label>
+                </div>
+                <div class="form__footer">
+                    <div class="form__group form__group--mb">
+                        <button type="submit" class="btn form__btn">Войти</button>
+                    </div>
+                    <div class="form__block">
+                        <p>Нет аккаунта?</p>
+                        <button>Зарегистрироваться</button>
+                        <button class="btn-red">Забыли пароль?</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="modal" id="recovery-modal">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/icons/close.svg" alt="close">
+            </button>
+            <h2 class="title_h2">Восстановление пароля</h2>
+            <p class="modal__undertitle">На вашу почту было отправлено письмо</p>
+            <form action="/" method="post" class="form">
+                <div class="form__group form__group--mb">
+                    <input type="e-mail" class="form__control" placeholder="E-mail">
+                </div>   
+                <div class="form__error-block">Неправильная почта или пароль</div>
+                <div class="form__group form__checkbox">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Я человек</label>
+                </div>
+                <div class="form__footer">
+                    <div class="form__group form__group--mb">
+                        <button type="submit" class="btn form__btn">Продолжить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- JS -->
     <script src="assets/js/app.js"></script>
 </body>

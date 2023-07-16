@@ -2,8 +2,6 @@
 @import "_mixins";
 @import "./vendor/reset";
 
-// ! В секции clients закомментирована анимация
-// ! Подумать о замене padding у section на margin-bottom
 
 // font-family: 'Inter', sans-serif;
 // font-family: 'Montserrat', sans-serif;
@@ -58,6 +56,7 @@ a {
 // Common blocks
 @import "blocks/header";
 @import "blocks/footer";
+@import "blocks/modal";
 @import "blocks/general-media";
 
 // Main page(index)

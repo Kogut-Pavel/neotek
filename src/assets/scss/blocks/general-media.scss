@@ -287,6 +287,19 @@
             }
         }
     }
+    .modal {
+        &__content {
+            padding: 3.3rem 4.6rem 2rem 2.6rem;
+        }
+    }
+    .form {
+        &__group {
+            input,
+            select {
+                padding: 1.5rem 2.4rem 1.4rem 2.4rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 425px) {
