@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+    .catalog {
+        &__headers {
+            margin-bottom: 3rem;
+            gap: 1rem .8rem;
+            li {
+                height: 5rem;
+                border-radius: .5rem;
+            }
+        }
+        &__assortment {
+            justify-content: center;
+        }
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            button {
+                margin-left: unset;
+                height: 6.7rem;
+                width: 34.8rem;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .catalog {
+        position: relative;
+        &__headers {
+            display: flex;
+            opacity: 0;
+            transition: opacity 0.2s linear;
+            &.active {   
+                opacity: 1;
+            }
+            position: absolute;
+            top: 18.1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 3rem);
+            flex-direction: column;
+            gap: .8rem;
+            color: $white;
+            background-color: $secondary;
+            padding: 1.3rem 1rem;
+            z-index: 99;
+            li {
+                padding: 0;
+                width: 100%;
+                height: auto;
+                font-weight: 400;
+                letter-spacing: 0.6px;
+                font-size: 1.4rem;
+                justify-content: flex-start;
+                text-align: left;
+            }
+        }
+        &__filter,
+        &__selected {
+            display: block;
+        }
+        &__filter {
+            position: relative;
+            padding: 2rem 5rem 2rem 1.5rem;
+            text-transform: uppercase;
+            background: $secondary;
+            color: $white;
+            font-weight: 500;
+            &::after {
+                content: url('../images/icons/arrow-catalog.svg');
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 2rem;
+                width: 2.1rem;
+                height: 1.1rem;
+            }
+        }
+        &__selected {      
+            margin-bottom: 1.5rem;
+            padding: 1.6rem 1.8rem 1.6rem 1.5rem;
+            color: $secondary;
+            font-weight: 500;
+            text-transform: uppercase;
+            border-bottom: 1px solid $secondary;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .catalog {
+        &__headers {
+            li {
+                font-size: 1.2rem;
+            }
+        }
+        &__bottom {
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

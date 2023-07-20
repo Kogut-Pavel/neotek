@@ -1180,13 +1180,15 @@ section.pt-10, footer.pt-10 {
     color: #CD2626;
 }
 
+.form__error-block {
+    display: none;
+    color: #CD2626;
+    letter-spacing: 0.7px;
+}
+
 @media (max-width: 1230px) {
     .header {
         padding: 1rem 0 6rem 0;
-    }
-
-    .header .container {
-        max-width: 850px;
     }
 
     .header__logo img {
@@ -1531,6 +1533,15 @@ section.pt-10, footer.pt-10 {
 
     .footer-mobile .footer__btns .footer__contacts {
         margin-top: 0;
+    }
+
+    .modal__content {
+        padding: 3.3rem 4.6rem 2rem 2.6rem;
+    }
+
+    .form__group input,
+  .form__group select {
+        padding: 1.5rem 2.4rem 1.4rem 2.4rem;
     }
 }
 
@@ -2592,6 +2603,51 @@ section.pt-10, footer.pt-10 {
     font-size: 1.8rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .catalog__headers {
+        margin-bottom: 3rem;
+        gap: 1rem .8rem;
+    }
+
+    .catalog__headers li {
+        height: 5rem;
+        border-radius: .5rem;
+    }
+
+    .catalog__assortment {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .catalog__bottom {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .catalog__bottom button {
+        margin-left: unset;
+        height: 6.7rem;
+        width: 34.8rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 660px) {
+    .catalog__headers {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .catalog__bottom p {
+        font-size: 1.4rem;
+    }
 }
 
 .productpage .section__text {

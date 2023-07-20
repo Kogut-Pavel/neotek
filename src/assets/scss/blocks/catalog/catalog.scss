@@ -32,6 +32,10 @@
             }
         }
     }
+    &__filter,
+    &__selected {
+        display: none;
+    }
     &__assortment {
         margin-bottom: 3.5rem;
         display: flex;

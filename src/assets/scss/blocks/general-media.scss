@@ -1,9 +1,9 @@
 @media (max-width: 1230px) {
     .header {
         padding: 1rem 0 6rem 0;
-        .container {
-            max-width: 850px;
-        }
+        // .container {
+        //     max-width: 850px;
+        // }
         &__logo {
             img {
                 height: 80px;
@@ -96,7 +96,7 @@
                 }
             }
             &.active {
-                z-index: 9;
+                z-index: 999;
                 opacity: 1;
                 pointer-events: unset;
             }
