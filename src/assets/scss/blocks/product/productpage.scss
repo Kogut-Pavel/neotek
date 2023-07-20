@@ -11,6 +11,9 @@
         background: #ebebeb;
         border-radius: 1.5rem;
     }
+    &__image-mobile {
+        display: none;
+    }
     &__header {
         display: flex;
         justify-content: space-between;
@@ -52,6 +55,9 @@
         p {
             letter-spacing: 0.05em;
         }
+    }
+    .readmore {
+        display: none;
     }
     &__buttons {
         display: flex;

@@ -18,6 +18,11 @@
     .product {
         max-width: 348px;
     }
+
+    .counter {
+        max-width: 13rem;
+        padding: .6rem .8rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -78,6 +83,13 @@
         }
         &__text {
             font-size: 1.5rem;
+        }
+    }
+
+    .breadcrumb {
+        overflow-x: scroll;
+        &__item {
+            min-width: fit-content;
         }
     }
 }

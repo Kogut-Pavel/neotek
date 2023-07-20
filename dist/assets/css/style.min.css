@@ -572,7 +572,10 @@ section, footer {
   .title_h1 {
     font-size: 3.5rem; }
   .product {
-    max-width: 348px; } }
+    max-width: 348px; }
+  .counter {
+    max-width: 13rem;
+    padding: .6rem .8rem; } }
 
 @media (max-width: 768px) {
   .contactsblock {
@@ -604,7 +607,11 @@ section, footer {
     flex-direction: column;
     margin-bottom: 2.5rem; }
   .section__text {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .breadcrumb {
+    overflow-x: scroll; }
+    .breadcrumb__item {
+      min-width: fit-content; } }
 
 .header {
   padding: 1rem 0 5rem 0;
@@ -1807,6 +1814,9 @@ section, footer {
   background: #ebebeb;
   border-radius: 1.5rem; }
 
+.productpage__image-mobile {
+  display: none; }
+
 .productpage__header {
   display: flex;
   justify-content: space-between;
@@ -1846,6 +1856,9 @@ section, footer {
   gap: 1.2rem; }
   .productpage__descr p {
     letter-spacing: 0.05em; }
+
+.productpage .readmore {
+  display: none; }
 
 .productpage__buttons {
   display: flex;
@@ -1972,6 +1985,126 @@ section, footer {
 
 .product-objects__text a {
   color: #136FB6; }
+
+@media (max-width: 1230px) {
+  .productpage__wrapper {
+    gap: 2.4rem; }
+  .productpage__image img {
+    width: 100%; }
+  .productpage__image, .productpage__info {
+    max-width: calc(50% - 1.2rem); }
+  .productpage__header {
+    align-items: flex-start; }
+  .productpage__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; }
+  .productpage .readmore {
+    display: block;
+    color: #136FB6; }
+  .productpage__descr {
+    margin-bottom: 2rem; }
+    .productpage__descr p:not(:first-child) {
+      display: none; }
+  .productpage__buttons {
+    margin-bottom: 2rem;
+    gap: .8rem; }
+  .productpage__tech_header {
+    padding: 1rem 1.2rem 1rem 0; }
+  .productpage__tech p {
+    font-size: 1.4rem; }
+  .product-objects__item {
+    gap: 2.4rem; }
+  .product-objects__images, .product-objects__descr {
+    width: calc(50% - 1.2rem); }
+  .product-objects__images {
+    flex-direction: column; }
+  .product-objects__descr {
+    padding: 3.2rem 1.6rem;
+    background: #ebebeb;
+    border-radius: 0.5rem;
+    letter-spacing: 0.05em; }
+  .product-objects__date {
+    margin-bottom: 1.4rem;
+    color: #136FB6; }
+  .product-objects__title {
+    margin-bottom: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.8rem; }
+  .product-objects__text a {
+    color: #136FB6; } }
+
+@media (max-width: 768px) {
+  .productpage__wrapper {
+    flex-direction: column;
+    align-items: center; }
+  .productpage__image, .productpage__info {
+    max-width: 100%; }
+  .productpage__image {
+    display: none; }
+  .productpage__image-mobile {
+    display: block;
+    background: #ebebeb;
+    border-radius: 1.5rem; }
+    .productpage__image-mobile img {
+      width: 100%; }
+  .productpage__undertitle {
+    margin-bottom: 1rem; }
+  .productpage__price {
+    margin-top: 1rem;
+    font-size: 2.5rem; }
+  .productpage__buttons .btn {
+    height: 5.7rem; }
+  .documents__list li {
+    gap: 1rem; }
+  .documents__name {
+    padding: 2rem 2rem;
+    width: 60%; }
+  .documents__download {
+    padding: 2rem;
+    width: 40%; }
+    .documents__download::after {
+      right: 1.5rem; }
+  .product-objects__wrapper, .product-objects__item {
+    gap: 1rem; }
+  .product-objects__images, .product-objects__descr {
+    width: calc(50% - .5rem); } }
+
+@media (max-width: 560px) {
+  .product-objects__wrapper {
+    gap: 2rem; }
+    .product-objects__wrapper::before {
+      content: none; }
+  .product-objects__item {
+    flex-direction: column; }
+  .product-objects__images {
+    gap: 1rem;
+    width: 100%;
+    flex-direction: row; }
+    .product-objects__images img {
+      max-width: calc(50% - .5rem); }
+  .product-objects__descr {
+    padding: 2.5rem 1.6rem;
+    width: 100%; } }
+
+@media (max-width: 425px) {
+  .productpage__header {
+    margin-bottom: .5rem;
+    align-items: center; }
+  .productpage__title {
+    font-size: 1.6rem;
+    margin-bottom: 0; }
+  .productpage__tech p {
+    font-size: 1.2rem; }
+  .documents__text {
+    margin: 2rem 0; }
+  .documents__name, .documents__download {
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem; }
+  .documents__download {
+    text-align: center; }
+    .documents__download::after {
+      content: none; } }
 
 .cart .section__text {
   max-width: 100%;

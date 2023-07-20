@@ -1,0 +1,202 @@
+@media (max-width: 1230px) {
+    .productpage {
+        &__wrapper {
+            gap: 2.4rem;
+        }
+        &__image {
+            img {
+                width: 100%;
+            }
+        }
+        &__image,
+        &__info {
+            max-width: calc(50% - 1.2rem);
+        }
+        &__header {
+            align-items: flex-start;
+        }
+        &__title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .readmore {
+            display: block;
+            color: $secondary;
+        }
+        &__descr {
+            margin-bottom: 2rem;
+            p:not(:first-child) {
+                display: none;
+            }
+        }
+        &__buttons {
+            margin-bottom: 2rem;
+            gap: .8rem;
+        }
+        &__tech {
+            &_header {
+                padding: 1rem 1.2rem 1rem 0;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .product-objects {
+        &__item {
+            gap: 2.4rem;
+        }
+        &__images,
+        &__descr {
+            width: calc(50% - 1.2rem);
+        }
+        &__images {  
+            flex-direction: column;
+        }
+        &__descr {
+            padding: 3.2rem 1.6rem;
+            background: #ebebeb;
+            border-radius: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+        &__date {
+            margin-bottom: 1.4rem;
+            color: $secondary;
+        }
+        &__title {
+            margin-bottom: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+        }
+        &__text {
+            a {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .productpage {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__image,
+        &__info {
+            max-width: 100%;
+        }
+        &__image {
+            display: none;
+        }
+        &__image-mobile {
+            display: block;
+            background: #ebebeb;
+            border-radius: 1.5rem;
+            img {
+                width: 100%;
+            }
+        }
+        &__undertitle {
+            margin-bottom: 1rem;
+        }
+        &__price {
+            margin-top: 1rem;
+            font-size: 2.5rem;
+        }
+        &__buttons {
+            .btn {
+                height: 5.7rem;
+            }
+        }
+    }
+    .documents {
+        &__list li {
+            gap: 1rem;
+        }
+        &__name {
+            padding: 2rem 2rem;
+            width: 60%;
+        }
+        &__download {
+            padding: 2rem;
+            width: 40%;
+            &::after {
+                right: 1.5rem;
+            }
+        }
+    }
+    .product-objects {
+        &__wrapper,
+        &__item {
+            gap: 1rem
+        }
+        &__images,
+        &__descr {
+            width: calc(50% - .5rem);
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .product-objects {
+        &__wrapper {
+            gap: 2rem;
+            &::before {
+                content: none;
+            }
+        }
+        &__item {
+            flex-direction: column;
+        }
+        &__images {
+            gap: 1rem;
+            width: 100%;
+            flex-direction: row;
+            img {
+                max-width: calc(50% - .5rem);
+            }
+        }
+        &__descr {
+            padding: 2.5rem 1.6rem;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .productpage {
+        &__header {
+            margin-bottom: .5rem;
+            align-items: center;
+        }
+        &__title {
+            font-size: 1.6rem;
+            margin-bottom: 0;
+        }
+        &__tech {
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .documents {
+        &__text {
+            margin: 2rem 0;
+        }
+        &__name,
+        &__download {
+            padding: 1.5rem 1rem;
+            font-size: 1.2rem;
+        }
+        &__download {
+            text-align: center;
+            &::after {
+                content: none;
+            }
+        }
+    }
+}
