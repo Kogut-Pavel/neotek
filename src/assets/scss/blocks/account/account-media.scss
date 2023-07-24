@@ -1,0 +1,72 @@
+@media (max-width: 1230px) {
+    .account {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+    .account-menu {
+        display: flex;
+        align-items: flex-start;
+        gap: 3.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile {
+        &__group {
+            margin-bottom: 2.5rem;
+        }
+        &__subtitle {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .order {
+        &__buttons {
+            overflow-x: scroll;
+            button {
+                min-width: fit-content;
+            }
+        }
+        &__item-right {
+            min-width: fit-content;
+        }
+        &__footer {
+            max-width: 100%;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .order {
+        &__item {
+            padding: .8rem;
+            gap: 1rem;
+            &-title {
+                font-size: 1.3rem;
+            }
+        }
+        &__buttons {
+            button {
+                font-size: 1.3rem;
+                padding: .9rem;
+            }
+        }
+        &__structure {
+            &-header {
+                font-size: 1.4rem;
+                div:first-child {
+                    span {
+                        right: -3.5rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        &__footer {
+            font-size: 1.3rem;
+        }
+    }
+}

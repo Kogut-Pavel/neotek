@@ -3702,6 +3702,92 @@ section.pt-10, footer.pt-10 {
     border: none;
 }
 
+@media (max-width: 1230px) {
+    .favourites__item {
+        margin-bottom: 1.5rem;
+    }
+
+    .favourites__left {
+        gap: 1rem;
+    }
+
+    .favourites__image img {
+        width: 15.1rem;
+    }
+
+    .favourites__right {
+        gap: 1.2rem;
+    }
+
+    .favourites h3 {
+        line-height: 111%;
+        font-weight: 500;
+    }
+
+    .favourites__price {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .favourites__item {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 1rem;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .favourites__left {
+        width: 100%;
+    }
+
+    .favourites__image {
+        width: 10.6rem;
+    }
+
+    .favourites__image img {
+        width: 10.6rem;
+    }
+
+    .favourites .counter {
+        margin-left: 0;
+        height: 3.9rem;
+        width: 10.6rem;
+    }
+
+    .favourites__right {
+        height: 3.9rem;
+    }
+
+    .favourites__btn-delete {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .favourites__item {
+        padding: 1.5rem;
+    }
+
+    .favourites__item-total {
+        font-size: 1.4rem;
+    }
+
+    .favourites h3 {
+        font-size: 1.2rem;
+    }
+
+    .favourites__price_old, .favourites__price_new {
+        font-size: 1.4rem;
+    }
+}
+
 .account .section__header {
     -ms-flex-pack: end;
     justify-content: end;

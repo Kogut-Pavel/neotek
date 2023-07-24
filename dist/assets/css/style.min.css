@@ -2725,6 +2725,47 @@ section, footer {
       .account-menu ul li:hover {
         color: #136FB6; }
 
+@media (max-width: 1230px) {
+  .account__wrapper {
+    flex-direction: column; }
+  .account-menu {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.2rem; } }
+
+@media (max-width: 768px) {
+  .profile__group {
+    margin-bottom: 2.5rem; }
+  .profile__subtitle {
+    margin-bottom: 1.5rem; }
+  .order__buttons {
+    overflow-x: scroll; }
+    .order__buttons button {
+      min-width: fit-content; }
+  .order__item-right {
+    min-width: fit-content; }
+  .order__footer {
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 1rem; } }
+
+@media (max-width: 425px) {
+  .order__item {
+    padding: .8rem;
+    gap: 1rem; }
+    .order__item-title {
+      font-size: 1.3rem; }
+  .order__buttons button {
+    font-size: 1.3rem;
+    padding: .9rem; }
+  .order__structure-header {
+    font-size: 1.4rem; }
+    .order__structure-header div:first-child span {
+      right: -3.5rem;
+      font-size: 1.2rem; }
+  .order__footer {
+    font-size: 1.3rem; } }
+
 .pricelist .section__header .section__text {
   max-width: 100%;
   text-align: center; }
