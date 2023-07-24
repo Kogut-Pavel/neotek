@@ -2839,6 +2839,39 @@ section, footer {
       background: transparent;
       border: none; }
 
+@media (max-width: 768px) {
+  .pricelist__item {
+    height: 6rem;
+    padding: 1rem 5.5rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem; }
+    .pricelist__item.active {
+      padding: 2rem 4.5rem 2rem 1rem;
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start; }
+  .pricelist__underitem {
+    gap: 1rem; }
+    .pricelist__underitem-price {
+      min-width: fit-content; } }
+
+@media (max-width: 640px) {
+  .pricelist__item {
+    text-transform: unset; }
+  .pricelist__underlist {
+    gap: 1rem; }
+  .pricelist__underitem {
+    flex-direction: column; }
+    .pricelist__underitem-title {
+      width: 100%; }
+    .pricelist__underitem-rightblock {
+      width: 100%; } }
+
+@media (max-width: 425px) {
+  .pricelist__underitem-price {
+    margin-right: 1rem; } }
+
 .aboutcompany__wrapper {
   position: relative;
   display: flex;
