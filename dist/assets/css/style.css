@@ -4176,6 +4176,83 @@ section.pt-10, footer.pt-10 {
     color: #136FB6;
 }
 
+@media (max-width: 1230px) {
+    .account__wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .account-menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        gap: 3.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile__group {
+        margin-bottom: 2.5rem;
+    }
+
+    .profile__subtitle {
+        margin-bottom: 1.5rem;
+    }
+
+    .order__buttons {
+        overflow-x: scroll;
+    }
+
+    .order__buttons button {
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+    }
+
+    .order__item-right {
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+    }
+
+    .order__footer {
+        max-width: 100%;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .order__item {
+        padding: .8rem;
+        gap: 1rem;
+    }
+
+    .order__item-title {
+        font-size: 1.3rem;
+    }
+
+    .order__buttons button {
+        font-size: 1.3rem;
+        padding: .9rem;
+    }
+
+    .order__structure-header {
+        font-size: 1.4rem;
+    }
+
+    .order__structure-header div:first-child span {
+        right: -3.5rem;
+        font-size: 1.2rem;
+    }
+
+    .order__footer {
+        font-size: 1.3rem;
+    }
+}
+
 .pricelist .section__header .section__text {
     max-width: 100%;
     text-align: center;
@@ -4283,6 +4360,66 @@ section.pt-10, footer.pt-10 {
     text-transform: uppercase;
     background: transparent;
     border: none;
+}
+
+@media (max-width: 768px) {
+    .pricelist__item {
+        height: 6rem;
+        padding: 1rem 5.5rem 1rem 1rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+
+    .pricelist__item.active {
+        padding: 2rem 4.5rem 2rem 1rem;
+        height: auto;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .pricelist__underitem {
+        gap: 1rem;
+    }
+
+    .pricelist__underitem-price {
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+    }
+}
+
+@media (max-width: 640px) {
+    .pricelist__item {
+        text-transform: unset;
+    }
+
+    .pricelist__underlist {
+        gap: 1rem;
+    }
+
+    .pricelist__underitem {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .pricelist__underitem-title {
+        width: 100%;
+    }
+
+    .pricelist__underitem-rightblock {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .pricelist__underitem-price {
+        margin-right: 1rem;
+    }
 }
 
 .aboutcompany__wrapper {
