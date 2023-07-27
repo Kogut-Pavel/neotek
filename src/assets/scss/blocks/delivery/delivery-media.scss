@@ -1,0 +1,119 @@
+@media (max-width: 1230px) {
+    .delivery {
+        &__title {
+            font-size: 2rem;
+        }
+        &__wrapper {
+            img {
+                max-width: calc(50% - 1rem);
+            }
+        }
+        &__texts {
+            flex-direction: column;
+            margin-bottom: 2rem;
+            p {
+                max-width: 100%;
+                gap: 1.5rem;
+            }
+        }
+        &__btn {
+            max-width: 100%;
+        }
+    }
+    .payment {
+        &__content {
+            max-width: calc(50% - 1rem);
+            width: 100%;
+        }
+        &__images {
+            max-width: calc(50% - 1rem);
+            flex-wrap: wrap;
+            display: flex;
+            gap: 0.5rem;
+            div {
+                width: 100%;
+                gap: .5rem;
+                &:last-child {
+                    display: flex;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            img {
+                max-height: 27rem;
+            }
+        }
+        &__text {
+            flex-direction: column;
+            p {
+                max-width: 100%;
+            }
+            .image {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .payment {
+        &__wrapper {
+            gap: 1.5rem;
+        }
+
+        &__images {
+            div {
+                justify-content: space-between;
+            }
+            img {
+                max-height: 20rem;
+                height: 100%;
+                width: calc(50% - 0.5rem);
+            }
+        }
+        &__text {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .delivery {
+        &__wrapper {
+            flex-direction: column;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+   .payment {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__content {
+            max-width: 100%;
+        }
+        &__images {
+            max-width: 100%;
+            div {
+                width: 100%;
+            }
+            img {
+                max-height: unset;
+            }
+        }
+   }
+}
+
+@media (max-width: 425px) {
+    .delivery {
+        &__title {
+            font-size: 1.6rem;
+        }
+        &__texts {
+            gap: 1rem;
+        }
+    }
+}

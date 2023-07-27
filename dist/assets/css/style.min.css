@@ -3134,11 +3134,14 @@ section, footer {
   align-items: flex-start;
   gap: 2rem; }
 
-.payment__images {
+.payment__images div {
   display: flex;
   gap: 2rem; }
-  .payment__images img {
-    border-radius: .5rem; }
+  .payment__images div:last-child {
+    display: none; }
+
+.payment__images img {
+  border-radius: .5rem; }
 
 .payment__text {
   position: relative;
@@ -3155,6 +3158,77 @@ section, footer {
     position: absolute;
     bottom: -53%;
     right: 0; }
+
+@media (max-width: 1230px) {
+  .delivery__title {
+    font-size: 2rem; }
+  .delivery__wrapper img {
+    max-width: calc(50% - 1rem); }
+  .delivery__texts {
+    flex-direction: column;
+    margin-bottom: 2rem; }
+    .delivery__texts p {
+      max-width: 100%;
+      gap: 1.5rem; }
+  .delivery__btn {
+    max-width: 100%; }
+  .payment__content {
+    max-width: calc(50% - 1rem);
+    width: 100%; }
+  .payment__images {
+    max-width: calc(50% - 1rem);
+    flex-wrap: wrap;
+    display: flex;
+    gap: 0.5rem; }
+    .payment__images div {
+      width: 100%;
+      gap: .5rem; }
+      .payment__images div:last-child {
+        display: flex; }
+        .payment__images div:last-child img {
+          width: 100%; }
+    .payment__images img {
+      max-height: 27rem; }
+  .payment__text {
+    flex-direction: column; }
+    .payment__text p {
+      max-width: 100%; }
+    .payment__text .image {
+      display: none; } }
+
+@media (max-width: 768px) {
+  .payment__wrapper {
+    gap: 1.5rem; }
+  .payment__images div {
+    justify-content: space-between; }
+  .payment__images img {
+    max-height: 20rem;
+    height: 100%;
+    width: calc(50% - 0.5rem); }
+  .payment__text {
+    margin-top: 1.5rem; } }
+
+@media (max-width: 560px) {
+  .delivery__wrapper {
+    flex-direction: column; }
+    .delivery__wrapper img {
+      max-width: 100%; }
+  .payment__wrapper {
+    flex-direction: column; }
+  .payment__content {
+    max-width: 100%; }
+  .payment__images {
+    max-width: 100%; }
+    .payment__images div {
+      width: 100%; }
+    .payment__images img {
+      max-height: unset; } }
+
+@media (max-width: 425px) {
+  .delivery__title {
+    font-size: 1.6rem; }
+  .delivery__texts {
+    gap: 1rem; } }
 
 .application__subtext {
   margin-left: auto;
