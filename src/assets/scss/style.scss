@@ -102,7 +102,6 @@ a {
 // Aboutcompany page
 @import "blocks/aboutcompany/aboutcompany";
 @import "blocks/aboutcompany/mission";
-@import "blocks/aboutcompany/contacts";
 @import "blocks/aboutcompany/aboutcompany-media";
 
 // Delivery page
@@ -110,8 +109,13 @@ a {
 @import "blocks/delivery/payment";
 @import "blocks/delivery/delivery-media";
 
+// Contacts page
+@import "blocks/contacts/contacts";
+@import "blocks/contacts/contacts-media";
+
 // Application page
 @import "blocks/application/application";
+@import "blocks/application/application-media";
 
 // Todesigners page
 @import "blocks/todesigners/todesigners";
