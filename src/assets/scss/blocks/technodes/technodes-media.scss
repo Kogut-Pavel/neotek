@@ -1,0 +1,43 @@
+@media (max-width: 1230px) {
+    .technodes {
+        &__wrapper {
+            gap: 2.5rem;
+        }
+        &__title {
+            font-size: 1.8rem;
+        }
+        &__block {
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            img {
+                max-width: 231px;
+                width: 100%;
+            }
+            ul {
+                max-width: 100%;
+                width: 100%;
+                li {
+                    padding: 0.6rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .technodes {
+        &__ctamore {
+            max-width: 100%;
+            margin-bottom: 1.5rem;
+        }
+        &__wrapper {
+            gap: 1.5rem;
+        }
+        &__block {
+            flex-direction: column;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
