@@ -1,0 +1,51 @@
+@media (max-width: 1230px) {
+    .techdescription {
+        &__underitem {
+            gap: 1.5rem;
+            &-title {
+                max-width: 20rem;
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .techdescription {
+        &__item {
+            padding: 1.5rem 2rem 1.5rem 2rem;
+            &::after {
+                top: 1.4rem;
+            }
+        }
+        &__underitem {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            &-title {
+                flex-shrink: 0;
+            }
+            p {
+                max-width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .techdescription {
+        &__item {
+            padding: 1.5rem 3rem 1.5rem 1.5rem;
+            &::after {
+                right: 1rem;
+            }
+        }
+        &__underitem {
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+}
