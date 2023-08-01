@@ -1,0 +1,31 @@
+@media (max-width: 1230px) {
+    .todesigners {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__block {
+            max-width: calc(50% - 1rem);
+            p {
+                min-height: 7rem;
+            }
+        }
+        &__bigblock {
+            max-width: 100%;
+            order: 3;
+            p {
+                min-height: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .todesigners {
+        &__block {
+            max-width: 100%;
+            p {
+                min-height: unset;
+            }
+        }
+    }
+}

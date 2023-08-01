@@ -3502,6 +3502,25 @@ section, footer {
   width: fit-content;
   min-width: 24.4rem; }
 
+@media (max-width: 1230px) {
+  .todesigners__wrapper {
+    flex-wrap: wrap; }
+  .todesigners__block {
+    max-width: calc(50% - 1rem); }
+    .todesigners__block p {
+      min-height: 7rem; }
+  .todesigners__bigblock {
+    max-width: 100%;
+    order: 3; }
+    .todesigners__bigblock p {
+      min-height: unset; } }
+
+@media (max-width: 560px) {
+  .todesigners__block {
+    max-width: 100%; }
+    .todesigners__block p {
+      min-height: unset; } }
+
 .brochure__item {
   width: fit-content;
   display: flex;
