@@ -5715,3 +5715,52 @@ section.pt-10, footer.pt-10 {
 .technodes__block ul li:last-child {
     border-bottom: 2px solid #136FB6;
 }
+
+@media (max-width: 1230px) {
+    .technodes__wrapper {
+        gap: 2.5rem;
+    }
+
+    .technodes__title {
+        font-size: 1.8rem;
+    }
+
+    .technodes__block {
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .technodes__block img {
+        max-width: 231px;
+        width: 100%;
+    }
+
+    .technodes__block ul {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .technodes__block ul li {
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .technodes__ctamore {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .technodes__wrapper {
+        gap: 1.5rem;
+    }
+
+    .technodes__block {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .technodes__block img {
+        max-width: 100%;
+    }
+}

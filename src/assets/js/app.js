@@ -86,9 +86,6 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     });
     
-
-
-
     try {
         // Переключение навигации на странице account
         const accountMenuList = document.querySelector(".account-menu ul");
@@ -117,6 +114,8 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log('Что-то не так');
     }
 
+    // Brochure pagination
+
     
-    
+
 });
