@@ -33,6 +33,23 @@
         padding: 4.6rem 7.1rem 4.6rem 0.6rem;
         background: rgba(255, 255, 255, 0.7);
         border-radius: 5px;
+        position: relative;
+        .owl-dots {
+            position: absolute;
+            bottom: 7rem;
+            left: 35%;
+            display: flex;
+            gap: 1rem;
+            button {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                background-color: gray;
+                &.active {
+                    background-color: $secondary;
+                }
+            }
+        }
     }
     &__product {
         display: flex;
@@ -42,6 +59,7 @@
             letter-spacing: 0.05em;
         }
         &-more {
+            margin-left: 15rem;
             color: $secondary;
             letter-spacing: 0.05em;
         }

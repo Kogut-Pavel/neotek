@@ -15,17 +15,28 @@
         &__right {
             max-width: 348px;
             padding: 2rem 3rem 2rem 0;
+            .owl-dots {
+                left: 39%;
+                bottom: 1.2rem;
+                button {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+            }
         }
         &__product {
             gap: 0.7rem;
             img {
-                width: 130px;
+                max-width: 130px;
             }
             &-descr {
                 margin: 0.5rem 0 1.5rem 0;
             }
             .mobile-hidden {
                 display: none;
+            }
+            &-more {
+                margin-left: 0;
             }
         }
     }
@@ -156,6 +167,7 @@
 
 @media (max-width: 768px) {
     .hero {
+        height: auto;
         background-position: 0% 50%;
         padding: 18rem 0 3.6rem 0;
         &__wrapper {
@@ -174,6 +186,9 @@
         &__right {
             max-width: 388px;
             padding: 2rem 3rem 2rem 0;
+            .owl-dots {
+                left: 35%;
+            }
         }
     }
 
@@ -389,6 +404,9 @@
         &__right {
             max-width: 100%;
             padding: 1.3rem 1rem 0.8rem 0;
+            .owl-dots {
+                display: none;
+            }
         }
         &__product {
             gap: 0.3rem;

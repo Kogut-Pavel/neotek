@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -18,7 +19,7 @@
 <body class="body">
 
     <!-- Header -->
-    <header class="header">
+    <header class="header abs">
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo">
@@ -127,7 +128,23 @@
                         </ul>
                         <a href="#" class="btn">В каталог</a>
                     </div>
-                    <div class="hero__right">
+                    <div class="hero__right owl-carousel">
+                        <div class="hero__product">
+                            <img src="assets/images/products/dolotex-wiron.png" alt="dolotex-wiron image">
+                            <div class="hero__product-text">
+                                <h3 class="title title_h3 hero__product-title">DOLOTEX WIRON</h3>
+                                <p class="hero__product-descr">Финишное покрытие, на полиуретане, двухкомпонентное. <span class="mobile-hidden">Упрочнение поверхностного слоя бетона в 2-3 раза, повышение трещиноустойчивости и устойчивости к ударным нагрузкам. Герметизация, гидроизоляция поверхности, непроницаемость для воды, хлоридов и солей</span></p>
+                                <a href="#" class="hero__product-more">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="hero__product">
+                            <img src="assets/images/products/dolotex-wiron.png" alt="dolotex-wiron image">
+                            <div class="hero__product-text">
+                                <h3 class="title title_h3 hero__product-title">DOLOTEX WIRON</h3>
+                                <p class="hero__product-descr">Финишное покрытие, на полиуретане, двухкомпонентное. <span class="mobile-hidden">Упрочнение поверхностного слоя бетона в 2-3 раза, повышение трещиноустойчивости и устойчивости к ударным нагрузкам. Герметизация, гидроизоляция поверхности, непроницаемость для воды, хлоридов и солей</span></p>
+                                <a href="#" class="hero__product-more">подробнее</a>
+                            </div>
+                        </div>
                         <div class="hero__product">
                             <img src="assets/images/products/dolotex-wiron.png" alt="dolotex-wiron image">
                             <div class="hero__product-text">
@@ -832,6 +849,8 @@
         </div>
     </div>
     <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

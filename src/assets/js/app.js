@@ -116,6 +116,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Brochure pagination
 
-    
+    // main page carousel
+
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel(
+            {
+                items: 1,
+                loop: true,
+                dots: true,
+                autoplay: true,
+            }
+        );
+    });
 
 });

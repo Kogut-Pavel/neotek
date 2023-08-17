@@ -5449,10 +5449,18 @@ section.pt-10, footer.pt-10 {
     }
 }
 
+.brochure__wrapper {
+    margin-bottom: 2.5rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
 .brochure__item {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 28.5rem;
+    height: 38.1rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -5462,6 +5470,11 @@ section.pt-10, footer.pt-10 {
     gap: 1.5rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #136FB6;
+}
+
+.brochure__item.onlyimage {
+    padding-bottom: 0;
+    border-bottom: unset;
 }
 
 .brochure__item img {
@@ -5475,7 +5488,7 @@ section.pt-10, footer.pt-10 {
     -ms-flex-align: center;
     align-items: center;
     gap: 3.1rem;
-    padding: .4rem 5.1rem .4rem 2.9rem;
+    padding: 0.4rem 5.1rem 0.4rem 2.9rem;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 155.1%;
@@ -5484,7 +5497,7 @@ section.pt-10, footer.pt-10 {
     color: #136FB6;
     border: 1px solid #136FB6;
     border-radius: 49px;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
 }
 
 .brochure__item a:hover {
@@ -5501,6 +5514,37 @@ section.pt-10, footer.pt-10 {
 .brochure__item a img {
     width: 3.2rem;
     height: 3.2rem;
+}
+
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pagination__item {
+    padding: 1rem 1.6rem;
+    font-weight: 700;
+    line-height: 155%;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: #136FB6;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.pagination__item.active {
+    border: 1px solid #136FB6;
+}
+
+.pagination__item:hover {
+    border: 1px solid #136FB6;
 }
 
 .techdescription__list {
