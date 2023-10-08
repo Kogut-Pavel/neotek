@@ -22,6 +22,9 @@
         border-radius: 5px;
         &-title {
             cursor: pointer;
+            + .active {
+                display: flex;
+            }
         }
         &::after {
             content: url("../images/icons/big-triangle.svg");
@@ -33,12 +36,9 @@
             cursor: pointer;
         }
         &.active {
-            &::after {
-                transform: rotate(180deg);
-            }
-            .pricelist__underlist {
-                display: flex;
-            }
+            // &::after {
+            //     transform: rotate(180deg);
+            // }
         }
     }
 

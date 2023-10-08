@@ -3,6 +3,7 @@
         position: relative;
         display: flex;
         gap: 2rem;
+        flex-wrap: wrap;
         align-items: flex-start;
         margin-bottom: 5.8rem;
         &::before,
@@ -21,10 +22,14 @@
         }
     }
     &__item {
+        max-width: 28.5rem;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         gap: 1.3rem;
+        &.hidden {
+            display: none;
+        }
     }
     &__date {
         letter-spacing: 0.05em;

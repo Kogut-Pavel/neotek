@@ -9,13 +9,14 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative;
+    // position: relative;
     font-family: "Inter", sans-serif;
     font-size: 1.4rem;
     line-height: 111%;
@@ -131,3 +132,6 @@ a {
 // Tech nodes page
 @import "blocks/technodes/technodes";
 @import "blocks/technodes/technodes-media";
+
+// Not found(404)
+@import "blocks/404/notFound";

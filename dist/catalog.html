@@ -19,7 +19,7 @@
 <body class="body">
 
     <!-- Header -->
-    <header class="header abs">
+    <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo">
@@ -61,7 +61,6 @@
                         <nav>
                             <ul>
                                 <li><a href="catalog.html">Каталог товаров</a></li>
-                                <li><a href="#">Производители</a></li>
                                 <li><a href="application.html">Область применения</a></li>
                                 <li><a href="pricelist.html">Прайс-лист</a></li>
                                 <li><a href="todesigners.html">Проектировщикам</a></li>
@@ -83,7 +82,6 @@
                     <li><a href="delivery.html">Доставка и оплата</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                     <li><a href="catalog.html">Каталог товаров</a></li>
-                    <li><a href="#">Производители</a></li>
                     <li><a href="application.html">Область применения</a></li>
                     <li><a href="pricelist.html">Прайс-лист</a></li>
                     <li><a href="todesigners.html">Проектировщикам</a></li>
@@ -123,7 +121,7 @@
                 <div class="catalog__filter">Фильтр</div>
                 <div class="catalog__selected">герметики</div>
                 <ul class="catalog__headers active">
-                    <li>Анкеровка металлоконструкций и<br> высокоточная установка<br> оборудования</li>
+                    <li class="active" data-filter="ankerovka">Анкеровка металлоконструкций и<br> высокоточная установка<br> оборудования</li>
                     <li>Герметизация Протечек</li>
                     <li>гидроизоляция<br> деформационных швов</li>
                     <li>защитно-гидроизоляционные<br> покрытия</li>
@@ -136,7 +134,7 @@
                     <li>Ремонт составами<br> тиксотропного типа</li>
                     <li>тампонажная смесь</li>
                     <li>выравнивание и финишная<br> отделка бетонных поверхностей</li>
-                    <li class="active">герметики</li>
+                    <li data-filter="germetic">герметики</li>
                     <li>Защита бетона в условиях<br> сильно агрессивной среды</li>
                     <li>инъектирование и<br> ремонт трещин</li>
                     <li>уход за свежеуложенным<br> бетоном</li>
@@ -144,7 +142,8 @@
                 </ul>
         
                 <div class="catalog__assortment">
-                    <div class="product">
+                    <div class="product germetic" >
+                        <img class="product__toFavourites" src="assets/images/icons/red-heart.svg" alt="#">
                         <a href="#">
                             <div class="product__image">
                                 <img src="assets/images/products/mapesil-bm.png" alt="MAPESIL BM image">
@@ -161,7 +160,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product ankerovka">
+                        <img class="product__toFavourites" src="assets/images/icons/red-heart.svg" alt="#">
                         <a href="#">
                             <div class="product__image">
                                 <img src="assets/images/products/mapeproof-swell.png" alt="MAPEPROOF SWELL image">
@@ -178,7 +178,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product ankerovka">
+                        <img class="product__toFavourites" src="assets/images/icons/red-heart.svg" alt="#">
                         <a href="#">
                             <div class="product__image">
                                 <img src="assets/images/products/mapeflex-pu35.png" alt="MAPEFLEX PU35 CR image">
@@ -196,6 +197,7 @@
                         </div>
                     </div>
                     <div class="product">
+                        <img class="product__toFavourites" src="assets/images/icons/red-heart.svg" alt="#">
                         <a href="product.html">
                             <div class="product__image">
                                 <img src="assets/images/products/mapeflex-pu70-sl.png" alt="MAPEFLEX PU70 SL image">
@@ -213,6 +215,7 @@
                         </div>
                     </div>
                     <div class="product">
+                        <img class="product__toFavourites" src="assets/images/icons/red-heart.svg" alt="#">
                         <a href="#">
                             <div class="product__image">
                                 <img src="assets/images/products/primer-m.png" alt="PRIMER M image">
@@ -230,6 +233,7 @@
                         </div>
                     </div>
                     <div class="product">
+                        <img class="product__toFavourites" src="assets/images/icons/red-heart.svg" alt="#">
                         <a href="#">
                             <div class="product__image">
                                 <img src="assets/images/products/mapesil-lm.png" alt="MAPESIL LM image">
@@ -247,6 +251,7 @@
                         </div>
                     </div>
                     <div class="product">
+                        <img class="product__toFavourites" src="assets/images/icons/red-heart-fill.svg" alt="#">
                         <a href="#">
                             <div class="product__image">
                                 <img src="assets/images/products/mapeflex-pu-45-ft.png" alt="MAPEFLEX PU 45 FT image">
@@ -264,6 +269,7 @@
                         </div>
                     </div>
                     <div class="product">
+                        <img class="product__toFavourites" src="assets/images/icons/red-heart-fill.svg" alt="#">
                         <a href="#">
                             <div class="product__image">
                                 <img src="assets/images/products/mapeflex-pu65.png" alt="MAPEFLEX PU65 image">
@@ -413,7 +419,6 @@
                         <div class="footer__col">
                             <ul>
                                 <li><a href="catalog.html">Каталог товаров</a></li>
-                                <li><a href="#">Производители</a></li>
                                 <li><a href="application.html">Область применения</a></li>
                                 <li><a href="pricelist.html">Прайс-лист</a></li>
                                 <li><a href="todesigners.html">Проектировщикам</a></li>

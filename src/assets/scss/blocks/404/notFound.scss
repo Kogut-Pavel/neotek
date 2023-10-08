@@ -1,0 +1,102 @@
+.notFound {
+    padding-top: 25rem;
+    height: 100vh;
+    background: url('../images/notFound.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        font-size: 14.8rem;
+        text-align: center;
+        line-height: 115%;
+    }
+    &__subtitle {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 111%;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__buttons {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        
+        a {
+            border: 2px black solid;
+            text-align: center;
+            font-weight: 600;
+            max-width: 28.5rem;
+            width: 100%;
+            padding: 2.4rem 0;
+            border-radius: .5rem;
+        }
+        .blue {
+            background-color: $secondary;
+        }
+        .red {
+            background-color: #CD2626;
+        }
+
+    }
+
+}
+
+.nF {
+    .footer {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .notFound {
+        padding-top: 20rem;
+        .title {
+            font-size: 9.6rem;
+        }
+        &__subtitle {
+            font-size: 1.8rem;
+        }
+
+        &__buttons {
+            font-size: 1.4rem;
+            a {
+                padding: 2rem 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .notFound {
+        background-position: 80% 50%;
+        padding-top: 18rem;
+        &__subtitle {
+            font-size: 1.6rem;
+        }
+        &__buttons {
+            gap: 1rem;
+            height: 5.5rem;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                height: 100%;
+                padding: 1.5rem 1rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
