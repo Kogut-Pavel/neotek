@@ -228,6 +228,29 @@
             flex-direction: column;
         }
     }
+
+    .modal {
+        &#tyforapp {
+            .modal__block {
+                width: 95%;
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+            .modal__title {
+                font-size: 1.6rem;
+            }
+            .modal__undertitle {
+                font-size: 1.4rem;
+            }
+
+
+            .modal__text {
+                font-size: 1.2rem;
+                bottom: 1rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 490px) {

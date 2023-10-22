@@ -133,5 +133,9 @@ a {
 @import "blocks/technodes/technodes";
 @import "blocks/technodes/technodes-media";
 
-// Not found(404)
+// Not found(404) page
 @import "blocks/404/notFound";
+
+// Checkout page
+@import "blocks/checkout/checkout";
+@import "blocks/checkout/checkout-media";

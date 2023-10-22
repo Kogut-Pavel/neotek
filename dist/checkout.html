@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>НЕОТЕК</title>
+</head>
+<body class="body">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="assets/images/header/logo-sm.png" media="(max-width: 768px)">
+                            <img src="assets/images/header/logo.png" alt="НЕОТЕК">
+                        </picture>
+                    </a>
+                </div>
+                <div class="header__inner">
+                    <div class="header__top">
+                        <nav>
+                            <ul>
+                                <li><a href="aboutcompany.html">О компании</a></li>
+                                <li><a href="delivery.html">Доставка и оплата</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+            
+                        <div class="contactsblock">
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Самара:</span>
+                                <a class="contactsblock__tel" href="tel:+78469906988">+7 (846) 990-69-88</a>
+                            </div>
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Тольятти:</span>
+                                <a class="contactsblock__tel" href="tel:+78482790790">+7 (848) 2-790-790</a>
+                            </div>
+                        </div>
+                        <div class="menu-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+            
+                    <div class="header__bottom">
+                        <nav>
+                            <ul>
+                                <li><a href="catalog.html">Каталог товаров</a></li>
+                                <li><a href="application.html">Область применения</a></li>
+                                <li><a href="pricelist.html">Прайс-лист</a></li>
+                                <li><a href="todesigners.html">Проектировщикам</a></li>
+                            </ul>
+                        </nav>
+            
+                        <div class="header__btns">
+                            <a href="favourites.html" class="header__icon"></a>
+                            <a href="cart.html" class="header__icon"></a>
+                            <a href="account.html" class="header__icon"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <nav class="header__mobile-menu">
+                <ul>
+                    <li><a href="aboutcompany.html">О компании</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                    <li><a href="application.html">Область применения</a></li>
+                    <li><a href="pricelist.html">Прайс-лист</a></li>
+                    <li><a href="todesigners.html">Проектировщикам</a></li>
+                    <li>
+                        <div class="contactsblock">
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Самара:</span>
+                                <a class="contactsblock__tel" href="tel:+78469906988">+7 (846) 990-69-88</a>
+                            </div>
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Тольятти:</span>
+                                <a class="contactsblock__tel" href="tel:+78482790790">+7 (848) 2-790-790</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        
+        <section class="checkout">
+            <div class="container">
+                <div class="breadcrumb">
+                    <img src="assets/images/icons/house.svg" alt="main">
+                    <div class="breadcrumb__item">Корзина</div>
+                    <div class="breadcrumb__item">Оформление заказа</div>
+                </div>
+        
+                <div class="section__header">
+                    <p class="section__text">Оформление заказа</p>
+                </div>
+        
+                <div class="checkout__wrapper">
+                    <div class="checkout__left">
+                        <div class="checkout__subtitles">
+                            <div class="profile__subtitle active">Я новый покупатель</div>
+                            <div class="profile__subtitle">у меня уже есть аккаунт</div>
+                        </div>
+                        <div class="checkout__message">
+                            <p>Заполните форму и мы<br> зарегистрируем для вас аккаунт</p>
+                        </div>
+                        <section class="profile">
+                            <form action="assets/js/app.js" method="post" id="checkout-form">
+                
+                                <div class="profile__group profile__main-data">
+                                    <label for="name">
+                                        <input type="text" name="name" id="name" placeholder="Иван" required>
+                                    </label>
+                                    <label for="secondname">
+                                        <input type="text" name="secondname" id="secondname" placeholder="Иванов" required>
+                                    </label>
+                                    <label for="thirdname">
+                                        <input type="text" name="thirdname" id="thirdname" placeholder="Иванович" required>
+                                    </label>
+                                    
+                                    <!-- <label for="birthday">
+                                        <input type="text" name="birthday" id="birthday" placeholder="14.02.2000" required>
+                                    </label> -->
+                                    <!-- <label for="email">
+                                        <input type="email" name="email" id="email" placeholder="ivanovname@gmail.com" required>
+                                    </label> -->
+                                    <!-- <label for="city">
+                                        <input type="text" name="city" id="city" placeholder="Ваш город" required>
+                                    </label> -->
+                                    <label for="tel">
+                                        <input type="tel" name="phone" id="tel" placeholder="+7 (495) 742-32-84" required>
+                                    </label>
+                                    <!-- <div class="profile__gender">
+                                        <label for="male">
+                                            <input type="checkbox" name="male" id="male">
+                                            <span>Муж</span>
+                                        </label>
+                                        <label for="female">
+                                            <input type="checkbox" name="female" id="female">
+                                            <span>Жен</span>
+                                        </label>
+                                    </div> -->
+                                    <button type="button" class="checkout-btn save-btn">Сохранить</button>
+                                </div>
+                                <div class="profile__subtitle">Тип пользователя</div>
+                                <div class="profile__group profile__type">
+                                    <div class="profile__subject">
+                                        <button type="button">Физическое лицо</button>
+                                        <label for="designer-fiz">
+                                            <input type="checkbox" name="designer-fiz" id="designer-fiz">
+                                            <span class="active">Проектировщик</span>
+                                        </label>
+                                        <label for="contractor-fiz">
+                                            <input type="checkbox" name="contractor-fiz" id="contractor-fiz">
+                                            <span>Подрядчик</span>
+                                        </label>
+                                        <label for="customer-fiz">
+                                            <input type="checkbox" name="customer-fiz" id="customer-fiz">
+                                            <span>Заказчик</span>
+                                        </label>
+                                    </div>
+                                    <div class="profile__subject">
+                                        <button type="button" class="active">Юридическое лицо</button>
+                                        <input class="face-name" type="text" name="urname" id="urname" placeholder="Название ЮЛ">
+                                        <label for="designer-ur">
+                                            <input type="checkbox" name="designer-ur" id="designer-ur">
+                                            <span class="active">Проектировщик</span>
+                                        </label>
+                                        <label for="contractor-ur">
+                                            <input type="checkbox" name="contractor-ur" id="contractor-ur">
+                                            <span>Подрядчик</span>
+                                        </label>
+                                        <label for="customer-ur">
+                                            <input type="checkbox" name="customer-ur" id="customer-ur">
+                                            <span>Заказчик</span>
+                                        </label>
+                                    </div>
+                                    <div class="profile__subject">
+                                        <button type="button">ИП</button>
+                                        <input class="face-name" type="text" name="indname" id="indname" placeholder="Название">
+                                        <label for="designer-ind">
+                                            <input type="checkbox" name="designer-ind" id="designer-ind">
+                                            <span class="active">Проектировщик</span>
+                                        </label>
+                                        <label for="contractor-ind">
+                                            <input type="checkbox" name="contractor-ind" id="contractor-ind">
+                                            <span>Подрядчик</span>
+                                        </label>
+                                        <label for="customer-ind">
+                                            <input type="checkbox" name="customer-ind" id="customer-ind">
+                                            <span>Заказчик</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="save-btn">Оформить заявку</button>
+                                <p class="checkout__offerta">Нажимая на эту кнопку я соглашаюсь с <a href="#">публичной офертой</a></p>
+                            </form>
+                
+                            <section class="documents">
+                                <ul class="documents__list">
+                                    <li>
+                                        <div class="documents__name">скачать коммерческое предложение</div>
+                                        <a href="#" class="documents__download">Скачать</a>
+                                    </li>
+                                </ul> 
+                            </section>
+                        </section>
+                    </div>
+                    <div class="checkout__right">
+                        <div class="checkout__order">
+                            <div class="checkout__order-title">состав заказа</div>
+                            <div class="cart__list">
+                                <div class="cart__item">
+                                    <div class="cart__left">
+                                        <div class="cart__image">
+                                            <img src="assets/images/products/mapeflex-pu70-sl.png" alt="MAPEFLEX PU70 SL image">
+                                        </div>
+                                        <div class="cart__info">
+                                            <h3 class="title title_h3">Герметик двухкомпонентный MAPEFLEX PU70 SL</h3>
+                                            <div class="cart__price">
+                                                <div class="cart__price_new">24 568 р.</div>
+                                                <div class="cart__count">2 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart__item">
+                                    <div class="cart__left">
+                                        <div class="cart__image">
+                                            <img src="assets/images/products/mapeflex-pu70-sl.png" alt="MAPEFLEX PU70 SL image">
+                                        </div>
+                                        <div class="cart__info">
+                                            <h3 class="title title_h3">Герметик двухкомпонентный MAPEFLEX PU70 SL</h3>
+                                            <div class="cart__price">
+                                                <div class="cart__price_new">24 568 р.</div>
+                                                <div class="cart__count">2 шт.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="checkout__change-order">Изменить заказ</a>
+                                <div class="checkout__order-total">
+                                    <div>Итого:</div>
+                                    <div class="checkout__order-total-price">95 266 р.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+               
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+                <div class="footer__text">
+                    продажа строительной химии техническое сопровождение
+                    <span>ООО “НЕОТЕК”</span>
+                </div>
+    
+                <div class="footer__inner">
+                    <div class="footer__col footer__name">
+                        <span>ООО “НЕОТЕК”</span>
+                        <p>
+                            Самара-Тольятти<br>
+                            2011-2023 ООО “НЕОТЕК”
+                        </p>
+                        <a href="mailto:sam.office@neotek-volga.ru">sam.office@neotek-volga.ru</a>
+                        <div class="footer__confident">
+                            <a href="#">Политика конфиденциальности</a>
+                            <div class="footer__copyright">
+                                © 2023<br>
+                                Все права защищены
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="footer__col">
+                        <ul>
+                            <li><a href="catalog.html">Каталог товаров</a></li>
+                            <li><a href="#">Производители</a></li>
+                            <li><a href="application.html">Область применения</a></li>
+                            <li><a href="pricelist.html">Прайс-лист</a></li>
+                            <li><a href="todesigners.html">Проектировщикам</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul>
+                            <li><a href="aboutcompany.html">О компании</a></li>
+                            <li><a href="delivery.html">Доставка и оплата</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>                   
+                        </ul>
+                        <div class="footer__btns">
+                            <a href="#">
+                                <img src="assets/images/footer/lk.svg" alt="icon">
+                                Личный кабинет
+                            </a>
+                            <a href="#">
+                                Политика в отношении обработки персональных данных
+                                <img src="assets/images/footer/approval.svg" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="contactsblock">
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Самара:</span>
+                                <a class="contactsblock__tel" href="tel:+78469906988">+7 (846) 990-69-88</a>
+                            </div>
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Тольятти:</span>
+                                <a class="contactsblock__tel" href="tel:+78482790790">+7 (848) 2-790-790</a>
+                            </div>
+                        </div>
+    
+                        <div class="footer__contacts">
+                            <a href="#">
+                                <img src="assets/images/footer/whatsapp.svg" alt="Whatsapp">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/footer/phone.svg" alt="Phone">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/footer/vk.svg" alt="VK">
+                            </a>
+                        </div>
+    
+                        <div class="footer__dev">
+                            Разработчик<br> 
+                            <a href="https://phoenix-site.ru/">
+                                веб-студия “Phoenix”
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <footer class="footer footer-mobile">
+        <div class="footer__wrapper">
+            <div class="container">
+                <div class="footer__text">
+                    продажа строительной химии техническое сопровождение
+                    <span>ООО “НЕОТЕК”</span>
+                </div>
+    
+                <div class="footer__inner">
+                    <div class="footer__col">
+                        <div class="footer__name">
+                            <p>
+                                Самара-Тольятти<br>
+                                2011-2023 ООО “НЕОТЕК”
+                            </p>
+                            <a href="mailto:sam.office@neotek-volga.ru">sam.office@neotek-volga.ru</a>
+                        </div>
+                        
+                        <div class="contactsblock">
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Самара:</span>
+                                <a class="contactsblock__tel" href="tel:+78469906988">+7 (846) 990-69-88</a>
+                            </div>
+                            <div class="contactsblock__item">
+                                <span class="contactsblock__city">Тольятти:</span>
+                                <a class="contactsblock__tel" href="tel:+78482790790">+7 (848) 2-790-790</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="footer__inner-right">
+                        <div class="footer__col">
+                            <ul>
+                                <li><a href="catalog.html">Каталог товаров</a></li>
+                                <li><a href="application.html">Область применения</a></li>
+                                <li><a href="pricelist.html">Прайс-лист</a></li>
+                                <li><a href="todesigners.html">Проектировщикам</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer__col">
+                            <ul>
+                                <li><a href="aboutcompany.html">О компании</a></li>
+                                <li><a href="delivery.html">Доставка и оплата</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>                   
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <div class="footer__btns">
+                    <div class="footer__col">
+                        <a href="#" class="lk">
+                            <img src="assets/images/footer/lk.svg" alt="icon">
+                            Личный кабинет
+                        </a>
+                    </div>
+                    <div class="footer__col row">
+                        <a href="#" class="politic">
+                            Политика в отношении обработки персональных данных
+                            <img src="assets/images/footer/approval.svg" alt="icon">
+                        </a>
+    
+                        <div class="footer__contacts">
+                            <a href="#">
+                                <img src="assets/images/footer/whatsapp.svg" alt="Whatsapp">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/footer/phone.svg" alt="Phone">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/footer/vk.svg" alt="VK">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer__bottom">
+                    <div class="footer__confident">
+                        <a href="#">Политика конфиденциальности</a>
+                        <div class="footer__copyright">
+                            © 2023<br>
+                            Все права защищены
+                        </div>
+                    </div>
+                    <div class="footer__dev">
+                        Разработчик<br> 
+                        <a href="https://phoenix-site.ru/">
+                            веб-студия “Phoenix”
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <div class="modal" id="reg-modal">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/icons/close.svg" alt="close">
+            </button>
+            <h2 class="title_h2">Регистрация</h2>
+            <p class="modal__undertitle">Чтобы добавить товар в корзину нужно зарегистрироваться. Сделаем это?</p>
+            <form action="/" method="post" class="form">
+                <div class="form__group form__group--mb">
+                    <input type="e-mail" class="form__control" placeholder="E-mail">
+                </div>
+                <div class="form__group form__group--mb">
+                    <input type="tel" class="form__control" placeholder="Контактный телефон">
+                </div>
+                <div class="form__group form__group--mb">
+                    <input type="text" class="form__control" placeholder="Ваш город">
+                </div>
+                <div class="form__group form__group--mb">
+                    <select name="" id="">
+                        <option value="Физическое лицо">Физическое лицо</option>
+                        <option value="Юридическое лицо">Юридическое лицо</option>
+                        <option value="ИП">ИП</option>
+                    </select>
+                </div>
+                <div class="form__group form__group--mb">
+                    <input type="password" class="form__control" placeholder="Пароль">
+                </div>
+                <div class="form__group form__group--mb">
+                    <input type="password" class="form__control" placeholder="Повторный пароль">
+                </div>
+                <p class="modal__text">Для обеспечения безопасности, пароль должен содержать минимум 8 символов, обязательно должны присутствовать цифры, буквы латиницей строчные и заглавные</p>
+                <div class="form__footer">
+                    <div class="form__group form__group--mb">
+                        <button type="submit" class="btn form__btn">Войти</button>
+                    </div>
+                    <div class="form__block">
+                        <p>Есть аккаунт?</p>
+                        <button data-modal="authorization-modal">Войти</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="modal" id="authorization-modal">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/icons/close.svg" alt="close">
+            </button>
+            <h2 class="title_h2">Авторизация</h2>
+            <p class="modal__undertitle">Чтобы добавить товар в корзину нужно авторизоваться. Сделаем это?</p>
+            <form action="/" method="post" class="form">
+                <div class="form__group form__group--mb">
+                    <input type="e-mail" class="form__control" placeholder="E-mail">
+                </div>   
+                <div class="form__group form__group--mb">
+                    <input type="password" class="form__control" placeholder="Пароль">
+                </div>
+                <div class="form__error-block">Неправильная почта или пароль</div>
+                <div class="form__group form__checkbox">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Запомнить</label>
+                </div>
+                <div class="form__footer">
+                    <div class="form__group form__group--mb">
+                        <button type="submit" class="btn form__btn">Войти</button>
+                    </div>
+                    <div class="form__block">
+                        <p>Нет аккаунта?</p>
+                        <button>Зарегистрироваться</button>
+                        <button class="btn-red">Забыли пароль?</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="modal" id="recovery-modal">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/icons/close.svg" alt="close">
+            </button>
+            <h2 class="title_h2">Восстановление пароля</h2>
+            <p class="modal__undertitle">На вашу почту было отправлено письмо</p>
+            <form action="/" method="post" class="form">
+                <div class="form__group form__group--mb">
+                    <input type="e-mail" class="form__control" placeholder="E-mail">
+                </div>   
+                <div class="form__error-block">Неправильная почта или пароль</div>
+                <div class="form__group form__checkbox">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Я человек</label>
+                </div>
+                <div class="form__footer">
+                    <div class="form__group form__group--mb">
+                        <button type="submit" class="btn form__btn">Продолжить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="modal" id="tyforapp">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/icons/close-white.svg" alt="close">
+            </button>
+            
+            <div class="modal__block">
+                <h2 class="title modal__title">Спасибо ваша заявка принята</h2>
+                <p class="modal__undertitle">Мы с вами свяжемся В течении дня</p>
+                <a href="index.html">На главную</a>
+            </div>
+            <p class="modal__text">продажа<br> 
+                строительной химии<br> 
+                техническое сопровождение</p>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

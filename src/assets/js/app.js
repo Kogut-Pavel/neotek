@@ -280,4 +280,109 @@ window.addEventListener('DOMContentLoaded', () => {
 
         });
     });
+
+    // Смена класса active 
+
+    const profileButtons = document.querySelectorAll('.profile__subject button');
+    const checkoutSubtitles = document.querySelectorAll('.checkout__subtitles .profile__subtitle');
+    
+
+    const changeActive = function(items) {
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                items.forEach(item => {
+                    item.classList.remove('active');
+                });
+                item.classList.add('active');
+            });
+        });
+    }
+
+    changeActive(profileButtons);
+    changeActive(checkoutSubtitles);
+
+
+    // Order tabs
+
+    const tabHeaders = document.querySelectorAll('[data-tab]');
+    const contentBoxes = document.querySelectorAll('[data-tab-content]');
+
+    tabHeaders.forEach(function (item) {
+        item.addEventListener('click', function () {
+            const contentBox = document.querySelector('#' + this.dataset.tab);
+            contentBoxes.forEach(function (item) {
+                item.classList.add('d-none');
+            });
+            contentBox.classList.remove('d-none');
+            tabHeaders.forEach(item => {
+                item.classList.remove('active');
+            });
+            item.classList.add('active');
+        });
+    });
+
+    // Checkout Form
+
+    const forms = () => {
+
+        const checkNumInputs = (selector) => {
+            const numInputs = document.querySelectorAll(selector);
+        
+        // Всем инпутам с вводом телефона разрешаем только цифры
+            numInputs.forEach(item => {
+                item.addEventListener('input', () => {
+                    item.value = item.value.replace(/[^0-9+]/g, '');
+                });
+            });
+        };
+    
+        const clearInputs = () => { // Очищаем инпуты
+            const inputs = document.querySelectorAll('input');
+            const checkbox = document.querySelectorAll('input[name="checkbox"]');
+            inputs.forEach(item => {
+                item.value = '';
+            });
+            checkbox.forEach(item => {
+                item.checked = false;
+            });
+        };
+    
+        // const form = document.querySelectorAll('form'); // Все формы
+        const form = document.querySelectorAll('#checkout-form'); // Только чекаут форма
+        checkNumInputs('input[name="phone"]');
+    
+        const postData = async (url, data) => { // Отправка запроса
+            let res = await fetch(url, {
+                method: "POST",
+                body: data,
+            });
+            if (!res.ok) {
+                throw new Error(res.statusText);
+            } else {
+                return await res.text();
+            }
+        };
+    
+        form.forEach(item => { // Перебираем формы и навешиваем обработчик события
+            item.addEventListener('submit', (event) => {
+                event.preventDefault();
+    
+                const formData = new FormData(item); // Собираем данные из формы
+    
+                // Отправляем запрос на сервер с данными из formData
+                postData('smart.php', formData)
+                    .then(() => {
+                        console.log('Отправлено');
+                    })
+                    .catch(err => {
+                        console.error(err);
+                    })
+                    .finally(() => {
+                        clearInputs();
+                    });
+            });
+        });
+    };
+
+    forms();
 });

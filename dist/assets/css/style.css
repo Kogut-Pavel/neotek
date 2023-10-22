@@ -1201,6 +1201,67 @@ section.pt-10, footer.pt-10 {
     letter-spacing: 0.7px;
 }
 
+.modal#tyforapp .modal__content {
+    position: relative;
+    background-image: url("../images/modal/tyforapp-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 1146px;
+    max-height: 80vh;
+    height: 100%;
+    padding: 5.3rem 5.6rem 4rem 4.6rem;
+    margin: 0;
+}
+
+.modal#tyforapp .modal__block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    max-width: -webkit-max-content;
+    max-width: max-content;
+    background: #fff;
+    border-radius: 7px;
+    padding: 2.5rem 3.2rem;
+    text-align: center;
+}
+
+.modal#tyforapp .modal__block a {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-weight: 500;
+}
+
+.modal#tyforapp .modal__title {
+    font-size: 2.5rem;
+    line-height: 115%;
+}
+
+.modal#tyforapp .modal__undertitle {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.modal#tyforapp .modal__text {
+    position: absolute;
+    bottom: 2.8rem;
+    right: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 @media (max-width: 1230px) {
     .header {
         padding: 1rem 0 6rem 0;
@@ -1477,6 +1538,27 @@ section.pt-10, footer.pt-10 {
         margin-bottom: 3rem;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    .modal#tyforapp .modal__block {
+        width: 95%;
+    }
+
+    .modal#tyforapp .modal__block a {
+        font-size: 1.4rem;
+    }
+
+    .modal#tyforapp .modal__title {
+        font-size: 1.6rem;
+    }
+
+    .modal#tyforapp .modal__undertitle {
+        font-size: 1.4rem;
+    }
+
+    .modal#tyforapp .modal__text {
+        font-size: 1.2rem;
+        bottom: 1rem;
     }
 }
 
@@ -3443,8 +3525,10 @@ section.pt-10, footer.pt-10 {
     color: #fff;
 }
 
-.cart__total button {
-    display: block;
+.cart__total .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-left: auto;
 }
 
@@ -5971,4 +6055,137 @@ section.pt-10, footer.pt-10 {
         padding: 1.5rem 1rem;
         font-size: 1.3rem;
     }
+}
+
+.checkout .section__text {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+}
+
+.checkout__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.checkout__subtitles {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+}
+
+.checkout__subtitles .profile__subtitle {
+    color: #8b8b8b;
+    cursor: pointer;
+}
+
+.checkout__subtitles .profile__subtitle.active {
+    color: #136FB6;
+}
+
+.checkout__message {
+    position: relative;
+    margin-bottom: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1.2rem 1rem 1.2rem 4rem;
+    border-radius: 5px;
+    border: 1px solid #8b8b8b;
+    background: #ebebeb;
+}
+
+.checkout__message:before {
+    content: url("../images/icons/lock.svg");
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.checkout__message p {
+    line-height: 111%;
+    letter-spacing: 0.7px;
+}
+
+.checkout .checkout-btn.save-btn {
+    padding: 1.5rem 2.5rem;
+    background: transparent;
+    color: #136FB6;
+    border: 1px solid #136FB6;
+    font-size: 1.4rem;
+}
+
+.checkout .checkout-btn.save-btn:hover {
+    background: #136FB6;
+    color: #fff;
+}
+
+.checkout .documents__name {
+    max-width: 44rem;
+    padding: 2.5rem;
+}
+
+.checkout .documents__download {
+    padding: 2.5rem 9.5rem 2.5rem 3rem;
+}
+
+.checkout .documents__download::after {
+    right: 3rem;
+}
+
+.checkout__order-title {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 111%;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.checkout__order-total {
+    padding: 2.6rem 2rem;
+    background: #136FB6;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 111%;
+    letter-spacing: 1.5px;
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.checkout .cart__list {
+    max-width: 38.2rem;
+}
+
+.checkout .title_h3 {
+    margin-bottom: 1rem;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.checkout .cart__count {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #136FB6;
+    text-transform: uppercase;
+}
+
+.checkout__change-order {
+    display: block;
+    margin-bottom: 2rem;
+    letter-spacing: 0.7px;
+    color: #136FB6;
 }

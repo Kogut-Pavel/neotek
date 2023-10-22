@@ -128,3 +128,65 @@
         letter-spacing: 0.7px;
     }
 }
+
+
+.modal {
+    &#tyforapp {
+        
+        .modal__content {
+            position: relative;
+            background-image: url('../images/modal/tyforapp-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            max-width: 1146px;
+            max-height: 80vh;
+            height: 100%;
+            padding: 5.3rem 5.6rem 4rem 4.6rem;
+            margin: 0;
+            
+            // opacity: 1;
+        }
+        .modal__block {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0 auto;
+            max-width: max-content;
+            background: #fff;
+            border-radius: 7px;
+            padding: 2.5rem 3.2rem;
+            text-align: center;
+            a {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                color: #fff;
+                position: absolute;
+                bottom: -3rem;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: 500;
+            }
+        }
+        .modal__title {
+            font-size: 2.5rem;
+            line-height: 115%;
+        }
+        .modal__undertitle {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        .modal__text {
+            position: absolute;
+            bottom: 2.8rem;
+            right: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}
+

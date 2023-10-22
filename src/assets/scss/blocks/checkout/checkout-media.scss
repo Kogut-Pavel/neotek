@@ -1,0 +1,99 @@
+@media (max-width: 1230px) {
+    .checkout {
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        .cart {
+            &__list {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout {
+        .documents__name {
+            padding: 1.4rem;
+            text-align: center;
+        }
+        .documents__download {
+            padding: 2.3rem 9.5rem 2.3rem 3rem;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .checkout {
+        .section__text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        &__order-title {
+            margin-bottom: 1.5rem;
+        }
+        .cart__list {
+            max-width: 100%;
+            width: 100%;
+        }
+        .cart__info {
+            max-width: 100%;
+        }
+        &__order-total {
+            padding: 1.3rem 2rem;
+            font-family: Inter;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+        &__subtitles {
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            .profile__subtitle {
+                margin-bottom: 0;
+            }
+        }
+        .documents__list {
+            li {
+                flex-direction: column;
+            }
+        }
+        .documents__name {
+            padding: 1.4rem;
+            text-align: center;
+        }
+        .documents__download {
+            &::after {
+                content: '';
+                background-image: url('../images/icons/download-blue.svg');
+                width: 28px;
+                height: 28px;
+                display: inline-block;
+                background-size: 28px 28px;
+                right: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .checkout {
+        .cart__list {
+            margin-bottom: 3.5rem;
+        }
+        .cart__item {
+            padding: .5rem;
+        }
+        .documents__download {
+            padding: 2rem 3rem 2rem 2rem;
+            &::after {
+                background-size: 18px 18px;
+                width: 18px;
+                height: 18px;
+                right: 1rem;
+            }
+        }
+    }
+}

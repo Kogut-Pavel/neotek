@@ -135,8 +135,8 @@
             text-transform: uppercase;
             color: $white;
         }
-        button {
-            display: block;
+        .btn {
+            width: fit-content;
             margin-left: auto;
         }
         &::before,

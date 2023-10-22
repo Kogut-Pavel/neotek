@@ -129,23 +129,23 @@
         
                     <div class="account__inner">
                         <section class="profile">
-                            <form action="#" id="profile-form">
+                            <form action="#" method="post" id="profile-form">
                                 <div class="profile__subtitle">Основные данные</div>
                                 <div class="profile__group profile__main-data">
                                     <label for="name">
-                                        <input type="text" name="name" id="name" placeholder="Иванов Иван">
+                                        <input type="text" name="name" id="name" placeholder="Иванов Иван" required>
                                     </label>
                                     <label for="birthday">
-                                        <input type="text" name="birthday" id="birthday" placeholder="14.02.2000">
+                                        <input type="text" name="birthday" id="birthday" placeholder="14.02.2000" required>
                                     </label>
                                     <label for="email">
-                                        <input type="email" name="email" id="email" placeholder="ivanovname@gmail.com">
+                                        <input type="email" name="email" id="email" placeholder="ivanovname@gmail.com" required>
                                     </label>
                                     <label for="city">
-                                        <input type="text" name="city" id="city" placeholder="Ваш город">
+                                        <input type="text" name="city" id="city" placeholder="Ваш город" required>
                                     </label>
                                     <label for="tel">
-                                        <input type="tel" name="tel" id="tel" placeholder="+7 (495) 742-32-84">
+                                        <input type="tel" name="tel" id="tel" placeholder="+7 (495) 742-32-84" required>
                                     </label>
                                     <div class="profile__gender">
                                         <label for="male">
@@ -161,7 +161,7 @@
                                 <div class="profile__subtitle">Тип пользователя</div>
                                 <div class="profile__group profile__type">
                                     <div class="profile__subject">
-                                        <button>Физическое лицо</button>
+                                        <button type="button">Физическое лицо</button>
                                         <label for="designer-fiz">
                                             <input type="checkbox" name="designer-fiz" id="designer-fiz">
                                             <span class="active">Проектировщик</span>
@@ -176,7 +176,7 @@
                                         </label>
                                     </div>
                                     <div class="profile__subject">
-                                        <button class="active">Юридическое лицо</button>
+                                        <button type="button" class="active">Юридическое лицо</button>
                                         <input class="face-name" type="text" name="urname" id="urname" placeholder="Название ЮЛ">
                                         <label for="designer-ur">
                                             <input type="checkbox" name="designer-ur" id="designer-ur">
@@ -192,7 +192,7 @@
                                         </label>
                                     </div>
                                     <div class="profile__subject">
-                                        <button>ИП</button>
+                                        <button type="button">ИП</button>
                                         <input class="face-name" type="text" name="indname" id="indname" placeholder="Название">
                                         <label for="designer-ind">
                                             <input type="checkbox" name="designer-ind" id="designer-ind">
@@ -214,13 +214,13 @@
         
                         <section class="order d-none">
                             <div class="order__buttons">
-                                <button class="active">В работе</button>
-                                <button>Завершенные</button>
-                                <button>Отмененные</button>
+                                <button class="active" data-tab="tab-1">В работе</button>
+                                <button data-tab="tab-2">Завершенные</button>
+                                <button data-tab="tab-3">Отмененные</button>
                             </div>
-                            <div class="order__data">
+                            <div class="order__data" data-tab-content id="tab-1">
                                 <div class="order__info">
-                                    <div>Заказ #<span>712904</span></div>
+                                    <div>Заказ #<span>111111</span></div>
                                     <div class="order__subinfo"><span class="order__date">13.13.2023</span> в <span class="order__time">19:43</span></div>
                                 </div>
                                  <div class="order__structure">
@@ -258,8 +258,86 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                           
+                            <div class="order__data d-none" data-tab-content id="tab-2">
+                                <div class="order__info">
+                                    <div>Заказ #<span>222222</span></div>
+                                    <div class="order__subinfo"><span class="order__date">13.13.2023</span> в <span class="order__time">19:43</span></div>
+                                </div>
+                                 <div class="order__structure">
+                                    <div class="order__structure-header">
+                                        <div>Состав заказа <span>2 ед.</span></div>
+                                    </div>
+        
+                                    <ul class="order__list">
+                                        <li class="order__item">
+                                            <div class="order__item-title">Герметик двухкомпонентный MAPEFLEX PU70 SL</div>
+                                            <div class="order__item-right">
+                                                <div class="order__item-price">4 568 р.</div>
+                                                <div class="order__item-count">2 шт.</div>
+                                            </div>
+                                        </li>
+                                        <li class="order__item">
+                                            <div class="order__item-title">Герметик двухкомпонентный MAPEFLEX PU70 SL</div>
+                                            <div class="order__item-right">
+                                                <div class="order__item-price">4 568 р.</div>
+                                                <div class="order__item-count">2 шт.</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+        
+                                    <div class="order__footer">
+                                        <div class="order__footer-text">
+                                            <div>Сумма заказа:</div>
+                                            <div>Способ доставки:</div>
+                                        </div>
+                                        <div class="order__footer-value">
+                                            <div class="order__sum">3 840 230 р.</div>
+                                            <div class="order__delivery">Самовывоз</div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__data d-none" data-tab-content id="tab-3">
+                                <div class="order__info">
+                                    <div>Заказ #<span>333333</span></div>
+                                    <div class="order__subinfo"><span class="order__date">13.13.2023</span> в <span class="order__time">19:43</span></div>
+                                </div>
+                                 <div class="order__structure">
+                                    <div class="order__structure-header">
+                                        <div>Состав заказа <span>2 ед.</span></div>
+                                    </div>
+        
+                                    <ul class="order__list">
+                                        <li class="order__item">
+                                            <div class="order__item-title">Герметик двухкомпонентный MAPEFLEX PU70 SL</div>
+                                            <div class="order__item-right">
+                                                <div class="order__item-price">4 568 р.</div>
+                                                <div class="order__item-count">2 шт.</div>
+                                            </div>
+                                        </li>
+                                        <li class="order__item">
+                                            <div class="order__item-title">Герметик двухкомпонентный MAPEFLEX PU70 SL</div>
+                                            <div class="order__item-right">
+                                                <div class="order__item-price">4 568 р.</div>
+                                                <div class="order__item-count">2 шт.</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+        
+                                    <div class="order__footer">
+                                        <div class="order__footer-text">
+                                            <div>Сумма заказа:</div>
+                                            <div>Способ доставки:</div>
+                                        </div>
+                                        <div class="order__footer-value">
+                                            <div class="order__sum">3 840 230 р.</div>
+                                            <div class="order__delivery">Самовывоз</div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                     </div>
                 </div>
@@ -556,6 +634,24 @@
                     </div>
                 </div>
             </form>
+        </div>
+    </div>
+    
+    
+    <div class="modal" id="tyforapp">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/icons/close-white.svg" alt="close">
+            </button>
+            
+            <div class="modal__block">
+                <h2 class="title modal__title">Спасибо ваша заявка принята</h2>
+                <p class="modal__undertitle">Мы с вами свяжемся В течении дня</p>
+                <a href="index.html">На главную</a>
+            </div>
+            <p class="modal__text">продажа<br> 
+                строительной химии<br> 
+                техническое сопровождение</p>
         </div>
     </div>
     <!-- JS -->

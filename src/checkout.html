@@ -1,0 +1,174 @@
+---
+layout: default
+title: Checkout
+---
+
+<section class="checkout">
+    <div class="container">
+        <div class="breadcrumb">
+            <img src="assets/images/icons/house.svg" alt="main">
+            <div class="breadcrumb__item">Корзина</div>
+            <div class="breadcrumb__item">Оформление заказа</div>
+        </div>
+
+        <div class="section__header">
+            <p class="section__text">Оформление заказа</p>
+        </div>
+
+        <div class="checkout__wrapper">
+            <div class="checkout__left">
+                <div class="checkout__subtitles">
+                    <div class="profile__subtitle active">Я новый покупатель</div>
+                    <div class="profile__subtitle">у меня уже есть аккаунт</div>
+                </div>
+                <div class="checkout__message">
+                    <p>Заполните форму и мы<br> зарегистрируем для вас аккаунт</p>
+                </div>
+                <section class="profile">
+                    <form action="assets/js/app.js" method="post" id="checkout-form">
+        
+                        <div class="profile__group profile__main-data">
+                            <label for="name">
+                                <input type="text" name="name" id="name" placeholder="Иван" required>
+                            </label>
+                            <label for="secondname">
+                                <input type="text" name="secondname" id="secondname" placeholder="Иванов" required>
+                            </label>
+                            <label for="thirdname">
+                                <input type="text" name="thirdname" id="thirdname" placeholder="Иванович" required>
+                            </label>
+                            
+                            <!-- <label for="birthday">
+                                <input type="text" name="birthday" id="birthday" placeholder="14.02.2000" required>
+                            </label> -->
+                            <!-- <label for="email">
+                                <input type="email" name="email" id="email" placeholder="ivanovname@gmail.com" required>
+                            </label> -->
+                            <!-- <label for="city">
+                                <input type="text" name="city" id="city" placeholder="Ваш город" required>
+                            </label> -->
+                            <label for="tel">
+                                <input type="tel" name="phone" id="tel" placeholder="+7 (495) 742-32-84" required>
+                            </label>
+                            <!-- <div class="profile__gender">
+                                <label for="male">
+                                    <input type="checkbox" name="male" id="male">
+                                    <span>Муж</span>
+                                </label>
+                                <label for="female">
+                                    <input type="checkbox" name="female" id="female">
+                                    <span>Жен</span>
+                                </label>
+                            </div> -->
+                            <button type="button" class="checkout-btn save-btn">Сохранить</button>
+                        </div>
+                        <div class="profile__subtitle">Тип пользователя</div>
+                        <div class="profile__group profile__type">
+                            <div class="profile__subject">
+                                <button type="button">Физическое лицо</button>
+                                <label for="designer-fiz">
+                                    <input type="checkbox" name="designer-fiz" id="designer-fiz">
+                                    <span class="active">Проектировщик</span>
+                                </label>
+                                <label for="contractor-fiz">
+                                    <input type="checkbox" name="contractor-fiz" id="contractor-fiz">
+                                    <span>Подрядчик</span>
+                                </label>
+                                <label for="customer-fiz">
+                                    <input type="checkbox" name="customer-fiz" id="customer-fiz">
+                                    <span>Заказчик</span>
+                                </label>
+                            </div>
+                            <div class="profile__subject">
+                                <button type="button" class="active">Юридическое лицо</button>
+                                <input class="face-name" type="text" name="urname" id="urname" placeholder="Название ЮЛ">
+                                <label for="designer-ur">
+                                    <input type="checkbox" name="designer-ur" id="designer-ur">
+                                    <span class="active">Проектировщик</span>
+                                </label>
+                                <label for="contractor-ur">
+                                    <input type="checkbox" name="contractor-ur" id="contractor-ur">
+                                    <span>Подрядчик</span>
+                                </label>
+                                <label for="customer-ur">
+                                    <input type="checkbox" name="customer-ur" id="customer-ur">
+                                    <span>Заказчик</span>
+                                </label>
+                            </div>
+                            <div class="profile__subject">
+                                <button type="button">ИП</button>
+                                <input class="face-name" type="text" name="indname" id="indname" placeholder="Название">
+                                <label for="designer-ind">
+                                    <input type="checkbox" name="designer-ind" id="designer-ind">
+                                    <span class="active">Проектировщик</span>
+                                </label>
+                                <label for="contractor-ind">
+                                    <input type="checkbox" name="contractor-ind" id="contractor-ind">
+                                    <span>Подрядчик</span>
+                                </label>
+                                <label for="customer-ind">
+                                    <input type="checkbox" name="customer-ind" id="customer-ind">
+                                    <span>Заказчик</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="save-btn">Оформить заявку</button>
+                        <p class="checkout__offerta">Нажимая на эту кнопку я соглашаюсь с <a href="#">публичной офертой</a></p>
+                    </form>
+        
+                    <section class="documents">
+                        <ul class="documents__list">
+                            <li>
+                                <div class="documents__name">скачать коммерческое предложение</div>
+                                <a href="#" class="documents__download">Скачать</a>
+                            </li>
+                        </ul> 
+                    </section>
+                </section>
+            </div>
+            <div class="checkout__right">
+                <div class="checkout__order">
+                    <div class="checkout__order-title">состав заказа</div>
+                    <div class="cart__list">
+                        <div class="cart__item">
+                            <div class="cart__left">
+                                <div class="cart__image">
+                                    <img src="assets/images/products/mapeflex-pu70-sl.png" alt="MAPEFLEX PU70 SL image">
+                                </div>
+                                <div class="cart__info">
+                                    <h3 class="title title_h3">Герметик двухкомпонентный MAPEFLEX PU70 SL</h3>
+                                    <div class="cart__price">
+                                        <div class="cart__price_new">24 568 р.</div>
+                                        <div class="cart__count">2 шт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__item">
+                            <div class="cart__left">
+                                <div class="cart__image">
+                                    <img src="assets/images/products/mapeflex-pu70-sl.png" alt="MAPEFLEX PU70 SL image">
+                                </div>
+                                <div class="cart__info">
+                                    <h3 class="title title_h3">Герметик двухкомпонентный MAPEFLEX PU70 SL</h3>
+                                    <div class="cart__price">
+                                        <div class="cart__price_new">24 568 р.</div>
+                                        <div class="cart__count">2 шт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="checkout__change-order">Изменить заказ</a>
+                        <div class="checkout__order-total">
+                            <div>Итого:</div>
+                            <div class="checkout__order-total-price">95 266 р.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+       
+    </div>
+</section>
