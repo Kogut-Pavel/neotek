@@ -224,43 +224,51 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Catalog
     // Принцип работы: У категории в списке должен быть data-filter с названием категории по которой будет фильтроваться каталог. У продукта должен быть класс с таким же названием как категория фильтра!
+    const catalogMenu = document.querySelector('.catalog__headers');
     const catalogHeaders = document.querySelectorAll('.catalog__headers li');
+    const filterButton = document.querySelector('.catalog__filter');
     const products = document.querySelectorAll('.product');
 
-    function filter (category, items) {
+    function filter(category, items) {
         items.forEach((item) => {
-          const isItemFiltered = !item.classList.contains(category);
-          if (isItemFiltered) {
-              item.classList.add('d-none');
-          } else {
-              item.classList.remove('d-none');
-          }
-        })
-      }
-
-      catalogHeaders.forEach((button) => {
-        button.addEventListener("click", () => {
-          const currentCategory = button.dataset.filter;
-          catalogHeaders.forEach(item => {
-            item.classList.remove('active');
-          });
-          button.classList.add('active');
-          filter(currentCategory, products);
+            const isItemFiltered = !item.classList.contains(category);
+            if (isItemFiltered) {
+                item.classList.add('d-none');
+            } else {
+                item.classList.remove('d-none');
+            }
         });
-      });
-      
-      if (catalogHeaders[0]) {
-        catalogHeaders[0].click();
-      }
-      
+    }
 
+    filterButton.addEventListener('click', () => {
+        catalogMenu.classList.toggle('active');
+    });
+
+    catalogHeaders.forEach((button) => {
+        button.addEventListener('click', () => {
+            
+            const currentCategory = button.dataset.filter;
+            catalogHeaders.forEach((item) => {
+                item.classList.remove('active');
+            });
+            catalogMenu.classList.remove('active');
+            button.classList.add('active');
+            filter(currentCategory, products);
+            document.querySelector('.catalog__selected').textContent = button.textContent;
+            
+        });
+    });
+
+    if (catalogHeaders[0]) {
+        catalogHeaders[0].click();
+    }
 
     //toFavourites-icon
 
     const icons = document.querySelectorAll('.product__toFavourites');
 
-    icons.forEach(item => {
-        item.addEventListener('click', function() {
+    icons.forEach((item) => {
+        item.addEventListener('click', function () {
             let startSrc;
             let endSrc;
             let newSrc;
@@ -277,30 +285,31 @@ window.addEventListener('DOMContentLoaded', () => {
                 this.src = newSrc;
             }
             item.style.width = '20px';
-
         });
     });
 
-    // Смена класса active 
+    // Смена класса active
 
-    const profileButtons = document.querySelectorAll('.profile__subject button');
-    const checkoutSubtitles = document.querySelectorAll('.checkout__subtitles .profile__subtitle');
-    
+    const profileButtons = document.querySelectorAll(
+        '.profile__subject button'
+    );
+    const checkoutSubtitles = document.querySelectorAll(
+        '.checkout__subtitles .profile__subtitle'
+    );
 
-    const changeActive = function(items) {
-        items.forEach(item => {
+    const changeActive = function (items) {
+        items.forEach((item) => {
             item.addEventListener('click', () => {
-                items.forEach(item => {
+                items.forEach((item) => {
                     item.classList.remove('active');
                 });
                 item.classList.add('active');
             });
         });
-    }
+    };
 
     changeActive(profileButtons);
     changeActive(checkoutSubtitles);
-
 
     // Order tabs
 
@@ -314,7 +323,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 item.classList.add('d-none');
             });
             contentBox.classList.remove('d-none');
-            tabHeaders.forEach(item => {
+            tabHeaders.forEach((item) => {
                 item.classList.remove('active');
             });
             item.classList.add('active');
@@ -324,36 +333,39 @@ window.addEventListener('DOMContentLoaded', () => {
     // Checkout Form
 
     const forms = () => {
-
         const checkNumInputs = (selector) => {
             const numInputs = document.querySelectorAll(selector);
-        
-        // Всем инпутам с вводом телефона разрешаем только цифры
-            numInputs.forEach(item => {
+
+            // Всем инпутам с вводом телефона разрешаем только цифры
+            numInputs.forEach((item) => {
                 item.addEventListener('input', () => {
                     item.value = item.value.replace(/[^0-9+]/g, '');
                 });
             });
         };
-    
-        const clearInputs = () => { // Очищаем инпуты
+
+        const clearInputs = () => {
+            // Очищаем инпуты
             const inputs = document.querySelectorAll('input');
-            const checkbox = document.querySelectorAll('input[name="checkbox"]');
-            inputs.forEach(item => {
+            const checkbox = document.querySelectorAll(
+                'input[name="checkbox"]'
+            );
+            inputs.forEach((item) => {
                 item.value = '';
             });
-            checkbox.forEach(item => {
+            checkbox.forEach((item) => {
                 item.checked = false;
             });
         };
-    
+
         // const form = document.querySelectorAll('form'); // Все формы
         const form = document.querySelectorAll('#checkout-form'); // Только чекаут форма
         checkNumInputs('input[name="phone"]');
-    
-        const postData = async (url, data) => { // Отправка запроса
+
+        const postData = async (url, data) => {
+            // Отправка запроса
             let res = await fetch(url, {
-                method: "POST",
+                method: 'POST',
                 body: data,
             });
             if (!res.ok) {
@@ -362,19 +374,20 @@ window.addEventListener('DOMContentLoaded', () => {
                 return await res.text();
             }
         };
-    
-        form.forEach(item => { // Перебираем формы и навешиваем обработчик события
+
+        form.forEach((item) => {
+            // Перебираем формы и навешиваем обработчик события
             item.addEventListener('submit', (event) => {
                 event.preventDefault();
-    
+
                 const formData = new FormData(item); // Собираем данные из формы
-    
+
                 // Отправляем запрос на сервер с данными из formData
                 postData('smart.php', formData)
                     .then(() => {
                         console.log('Отправлено');
                     })
-                    .catch(err => {
+                    .catch((err) => {
                         console.error(err);
                     })
                     .finally(() => {

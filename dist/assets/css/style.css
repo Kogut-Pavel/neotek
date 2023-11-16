@@ -2805,8 +2805,9 @@ section.pt-10, footer.pt-10 {
         display: flex;
         opacity: 0;
         transition: opacity 0.2s linear;
+        pointer-events: none;
         position: absolute;
-        top: 18.1rem;
+        top: 14rem;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -2822,6 +2823,7 @@ section.pt-10, footer.pt-10 {
 
     .catalog__headers.active {
         opacity: 1;
+        pointer-events: unset;
     }
 
     .catalog__headers li {
@@ -2871,6 +2873,10 @@ section.pt-10, footer.pt-10 {
 }
 
 @media (max-width: 425px) {
+    .catalog__headers {
+        top: 13.4rem;
+    }
+
     .catalog__headers li {
         font-size: 1.2rem;
     }
@@ -4028,6 +4034,11 @@ section.pt-10, footer.pt-10 {
     flex-wrap: wrap;
 }
 
+.profile__subject button ~ label,
+    .profile__subject button ~ input {
+    display: none;
+}
+
 .profile__subject button {
     padding: 1.5rem 2.5rem;
     font-weight: 700;
@@ -4044,6 +4055,11 @@ section.pt-10, footer.pt-10 {
     color: #fff;
     background: #136FB6;
     border-color: #136FB6;
+}
+
+.profile__subject button.active ~ label, .profile__subject button.active ~ input {
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .profile__subject button:hover:not(.active) {
@@ -6087,6 +6103,10 @@ section.pt-10, footer.pt-10 {
     color: #136FB6;
 }
 
+.checkout__subtitles .profile__subtitle:hover {
+    color: #136FB6;
+}
+
 .checkout__message {
     position: relative;
     margin-bottom: 2rem;
@@ -6124,6 +6144,18 @@ section.pt-10, footer.pt-10 {
 .checkout .checkout-btn.save-btn:hover {
     background: #136FB6;
     color: #fff;
+}
+
+.checkout__offerta {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #8B8B8B;
+}
+
+.checkout__offerta a {
+    color: #000;
 }
 
 .checkout .documents__name {
@@ -6188,4 +6220,106 @@ section.pt-10, footer.pt-10 {
     margin-bottom: 2rem;
     letter-spacing: 0.7px;
     color: #136FB6;
+}
+
+@media (max-width: 1230px) {
+    .checkout__wrapper {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .checkout .cart__list {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout .documents__name {
+        padding: 1.4rem;
+        text-align: center;
+    }
+
+    .checkout .documents__download {
+        padding: 2.3rem 9.5rem 2.3rem 3rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .checkout .section__text {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .checkout__order-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .checkout .cart__list {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .checkout .cart__info {
+        max-width: 100%;
+    }
+
+    .checkout__order-total {
+        padding: 1.3rem 2rem;
+        font-family: Inter;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    .checkout__subtitles {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .checkout__subtitles .profile__subtitle {
+        margin-bottom: 0;
+    }
+
+    .checkout .documents__list li {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .checkout .documents__name {
+        padding: 1.4rem;
+        text-align: center;
+    }
+
+    .checkout .documents__download::after {
+        content: '';
+        background-image: url("../images/icons/download-blue.svg");
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        background-size: 28px 28px;
+        right: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .checkout .cart__list {
+        margin-bottom: 3.5rem;
+    }
+
+    .checkout .cart__item {
+        padding: .5rem;
+    }
+
+    .checkout .documents__download {
+        padding: 2rem 3rem 2rem 2rem;
+    }
+
+    .checkout .documents__download::after {
+        background-size: 18px 18px;
+        width: 18px;
+        height: 18px;
+        right: 1rem;
+    }
 }
